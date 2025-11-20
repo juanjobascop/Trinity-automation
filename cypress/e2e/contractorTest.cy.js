@@ -1,45 +1,33 @@
 describe('Contractor Management Test', () => {
 
-  it('Logs in and opens the Create Contractor modal', () => {
-    
-    // 1. Visit the URL
+  it('Opens modal with radios visible', () => {
+
     cy.visit('http://154.38.173.164:6980');
-    cy.wait(2000); // Wait for 1 second to ensure the page loads
 
-
-    
-    
-    // Finds the input for username and types 'admin'
-    cy.get('input[name="username"]').type('admin'); 
-    
-    // Finds the input for password and types 'sample'
+    cy.get('input[name="username"]').type('admin');
     cy.get('input[type="password"]').type('sample');
-    
-    // Finds the button with type="submit" and clicks it
     cy.get("button[type='button']").click();
-    cy.wait(3000);
- 
-    // We verify the URL changed or we see the dashboard
-    cy.url().should('not.include', 'login');
+    cy.wait(2000);
 
-    // 4. Click on the "Contractors" tab
-    // 'cy.contains' looks for that specific text anywhere on the page
+    // Navigate
     cy.contains('Contractors').click();
-    cy.wait(2000); // Wait for 2 seconds to ensure the Contractors page loads
-    // 5. Click the "+ Create new contractor" button
-    cy.get("div[class='w-full flex items-center gap-2']").click();
-    cy.wait(2000); // Wait for 2 seconds to ensure the modal opens
-    // 6. Verify the Modal is actually open
 
+    // LISTEN to modal XHRs
+    cy.intercept('POST', '**/gen/find-many').as('findMany');
+    cy.intercept('POST', '**/catalogs/get-catalogs').as('getCatalogs');
 
+    // OPEN Modal
+    cy.get("div.w-full.flex.items-center.gap-2").click();
 
-    //We will check field by field if the locators are correct
+    // WAIT for XHR data to load
+    cy.wait('@findMany');
+    cy.wait('@getCatalogs');
+
+    // NOW everything is rendered
     cy.get('#firstName').type('CypressFirstName');
     cy.get('#lastName').type('CypressLastName');
-  
-    //cy.get('#status-active').check(); // Status radio button is not working, the radio buttons appear hidden in cypress
-    cy.contains('ACTIVE').click({ force: true });
-    
+    cy.get('#status-active').should('be.visible').click();
+
   });
 
 });
