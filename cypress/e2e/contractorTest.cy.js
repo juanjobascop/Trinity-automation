@@ -137,7 +137,7 @@ describe('Contractor Management Test (stable)', () => {
     selectPrimeAndClose('timezoneCt', 'Bolivia/Atlantic Standard');
 
     // username
-    cy.get('#username').clear().type('cypressTEST').should('have.value', 'cypressTEST');
+    cy.get('#username').clear().type('cypresstest').should('have.value', 'cypresstest');
 
     // (Optional) submit and assert success if desired:
     // cy.get('button').contains('Create New Contractor').click();
@@ -152,9 +152,34 @@ describe('Contractor Management Test (stable)', () => {
     cy.get('#confirmPassword').find('input').should('be.visible').and('have.attr', 'type', 'password')
       .type('Sample123.');
 
-    
 
-      
+    
+    //ADDRESS FIELD
+    cy.get('#address').type('This is a test');
+
+
+    //Personal Email
+    cy.get('#email').clear().type('personal@test.com').should('have.value', 'personal@test.com');
+
+    //Phone
+    cy.get('#phone').type('1234567890');
+
+    //CONTRACTOR FIELD BLOCKED
+
+
+
+
+
+
+
+
+
+    //DATEPICKER FIELD
+cy.get("input[name='birthDate']").click();
+
+
+
+
    
     
 
