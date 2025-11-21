@@ -1,0 +1,11 @@
+Error: Webpack Compilation Error
+Module build failed (from C:\Users\Usuario\AppData\Local\Cypress\Cache\15.7.0\Cypress\resources\app\node_modules\babel-loader\lib\index.js):
+SyntaxError: D:\githubrepo\trinity\Trinity-automation\cypress\e2e\Contracts.cy.js: 'import' and 'export' may only appear at the top level. (55:4)
+
+  53 |     cy.get('#notes').clear().type('This is a note for the contractor.');
+  54 |
+> 55 |     import 'cypress-file-upload';
+     |     ^
+  56 |     const filePath = 'testDoc.txt';
+  57 |     cy.get('input[type="file"][name="contractFile"]').attachFile(filePath);
+  58 |
