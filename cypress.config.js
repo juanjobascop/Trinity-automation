@@ -6,6 +6,8 @@ module.exports = defineConfig({
   viewportHeight: 1080,
 
   e2e: {
+    experimentalStudio: true,   // 👈 enable Cypress Studio
+
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

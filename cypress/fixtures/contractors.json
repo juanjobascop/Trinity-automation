@@ -1,0 +1,38 @@
+[
+  {
+    "status": "active",
+    "firstName": "Cypresstest",
+    "lastName": "One1111atest",
+    "gender": "Male",
+    "dobYear": "1988",
+    "dobMonth": "Jan",
+    "dobDay": "8",
+    "supervisor": "Admin User",
+    "country": "Bolivia",
+    "timezone": "Bolivia",
+    "username": "cypresstest1",
+    "officeEmail": "test1@test.com",
+    "personalEmail": "personatesta@test.com",
+    "whatsapp": "12345678910",
+    "role": "Contractor",
+    "address": "Address 1123123123123"
+  },
+  {
+    "status": "active",
+    "firstName": "CypressUser",
+    "lastName": "Twotesta",
+    "gender": "Female",
+    "dobYear": "2010",
+    "dobMonth": "May",
+    "dobDay": "15",
+    "supervisor": "Juan Bascope",
+    "country": "United States",
+    "timezone": "Alaska",
+    "username": "cypresstest2a",
+    "officeEmail": "test2@test.com",
+    "personalEmail": "personaltesat@test.com",
+    "whatsapp": "09876543121",
+    "role": "Administrator",
+    "address": "Address 2 1231231231123"
+  }
+]
