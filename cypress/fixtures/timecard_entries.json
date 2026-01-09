@@ -1,0 +1,20 @@
+[
+    {
+        "date": "2025-09-29",
+        "startTime": "09:00",
+        "endTime": "11:00",
+        "workType": "Project",
+        "project": "Trinity2",
+        "taskType": "Bug Fix",
+        "description": "First bulk entry: Project work."
+    },
+    {
+        "date": "2025-09-30",
+        "startTime": "14:00",
+        "endTime": "15:30",
+        "workType": "Administrative",
+        "project": "",
+        "taskType": "Representation / External Relations",
+        "description": "Administrative work example."
+    }
+]
