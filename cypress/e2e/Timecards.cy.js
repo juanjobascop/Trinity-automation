@@ -1,6 +1,7 @@
 import 'cypress-file-upload';
+import 'cypress-real-events';
 
-describe('Create My Timecard - Bulk Event Creation', () => {
+describe('Create My Timecard - Multi-Contractor Bulk Event Creation', () => {
 
   // Helper: Get Monday of the week
   const getMondayOfWeek = (dateStr) => {
@@ -42,138 +43,205 @@ describe('Create My Timecard - Bulk Event Creation', () => {
     return `${hours}h ${minutes}m`;
   };
 
-  before(() => {
-    // 1. Visit and Login ONCE
+  // Helper: Login with credentials
+  const login = (username, password) => {
     cy.visit('http://154.38.173.164:6980');
-    cy.get('input[name="username"]', { timeout: 10000 }).clear().type('atreus');
-    cy.get('input[type="password"]', { timeout: 10000 }).clear().type('Sample123.', { log: false });
+    cy.get('input[name="username"]', { timeout: 10000 }).clear().type(username);
+    cy.get('input[type="password"]', { timeout: 10000 }).clear().type(password, { log: false });
     cy.get("button[type='button']").click();
     cy.contains('My Timecard', { timeout: 15000 }).should('be.visible').click();
     cy.get('.fc-timegrid-body', { timeout: 15000 }).should('be.visible');
-  });
+    cy.wait(3000); // Wait for initial data load (projects, etc.)
+  };
 
-  it('should create multiple events from JSON fixture', () => {
-    cy.viewport(1920, 1080);
+  // Helper: Logout
+  const logout = () => {
+    // Click on the red logout button/link
+    cy.get('a.bg-red-600', { timeout: 10000 }).should('be.visible').click();
+    cy.wait(1000);
+    // Verify we're back at login page
+    cy.get('input[name="username"]', { timeout: 10000 }).should('be.visible');
+  };
 
-    // Load Fixture
-    cy.fixture('timecard_entries').then((entries) => {
-      entries.forEach((entry, index) => {
-        cy.log(`PROCESSING ENTRY ${index + 1}: ${entry.date} ${entry.startTime}-${entry.endTime}`);
+  // Helper: Process a single timecard entry
+  const processEntry = (entry) => {
+    const targetDate = entry.date;
+    const startTime = entry.startTime + ':00';
+    const dragEndTime = subtractMinutes(entry.endTime, 15) + ':00';
+    const durationStr = calculateDuration(entry.startTime, entry.endTime);
 
-        const targetDate = entry.date;
-        const startTime = entry.startTime + ':00';
-        const dragEndTime = subtractMinutes(entry.endTime, 15) + ':00';
-        const durationStr = calculateDuration(entry.startTime, entry.endTime);
+    // ============================================================
+    // 1. NAVIGATION
+    // ============================================================
+    cy.get('th[role="columnheader"][data-date]').first().invoke('attr', 'data-date').then((currentDateStr) => {
+      const currentMonday = getMondayOfWeek(currentDateStr);
+      const targetMonday = getMondayOfWeek(targetDate);
+      const weeksDiff = getWeeksDifference(currentMonday, targetMonday);
 
-        // ============================================================
-        // 1. NAVIGATION
-        // ============================================================
-        cy.get('th[role="columnheader"][data-date]').first().invoke('attr', 'data-date').then((currentDateStr) => {
-          const currentMonday = getMondayOfWeek(currentDateStr);
-          const targetMonday = getMondayOfWeek(targetDate);
-          const weeksDiff = getWeeksDifference(currentMonday, targetMonday);
+      if (weeksDiff !== 0) {
+        const chevronDirection = weeksDiff > 0 ? 'chevron_right' : 'chevron_left';
+        const clickCount = Math.abs(weeksDiff);
+        for (let i = 0; i < clickCount; i++) {
+          cy.contains('span.material-symbols-outlined', chevronDirection).click();
+          cy.wait(500);
+        }
+        cy.wait(1000); // Settle
+      }
+    });
 
-          if (weeksDiff !== 0) {
-            const chevronDirection = weeksDiff > 0 ? 'chevron_right' : 'chevron_left';
-            const clickCount = Math.abs(weeksDiff);
-            for (let i = 0; i < clickCount; i++) {
-              cy.contains('span.material-symbols-outlined', chevronDirection).click();
-              cy.wait(500);
-            }
-            cy.wait(1000); // Settle
-          }
-        });
+    // Verify target date column exists
+    cy.get(`.fc-timegrid-col[data-date="${targetDate}"]`, { timeout: 10000 }).should('exist');
 
-        // Verify target date
-        cy.get(`.fc-timegrid-col[data-date="${targetDate}"]`, { timeout: 10000 }).should('exist');
+    // ============================================================
+    // 2. DRAG INTERACTION (Using cypress-real-events)
+    // ============================================================
+    // Scroll the start time slot into view
+    cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`)
+      .scrollIntoView({ block: 'center' })
+      .should('be.visible');
 
-        // ============================================================
-        // 2. DRAG INTERACTION (Absolute Top-Edge Strategy)
-        // ============================================================
-        cy.get(`.fc-timegrid-col[data-date="${targetDate}"]`).then($col => {
-          const colRect = $col[0].getBoundingClientRect();
-          const colAbsCenterX = colRect.left + (colRect.width / 2);
+    cy.wait(500); // Allow scroll to settle
 
-          // Scroll buffer time (1 hr before) to ensure start is fully visible and not under header
-          const scrollTargetTime = subtractMinutes(entry.startTime, 60) + ':00';
-          cy.get(`td.fc-timegrid-slot-lane[data-time="${scrollTargetTime}"]`)
-            .should('exist')
-            .scrollIntoView({ block: 'center' })
-            .should('be.visible');
+    // Get the intersection cell using INDEX matching (Header -> Body Column)
+    // data-date on body columns might be unreliable or duplicated
+    cy.log(`TARGET DATE FOR DRAG: ${targetDate}`);
 
-          cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`).should('be.visible').then($start => {
-            cy.get(`td.fc-timegrid-slot-lane[data-time="${dragEndTime}"]`).should('be.visible').then($end => {
+    // Find the header index for the target date
+    cy.get(`th[role="columnheader"].fc-col-header-cell`).then($headers => {
+      // Find index of header with matching data-date
+      let targetIndex = -1;
+      $headers.each((i, el) => {
+        if (Cypress.$(el).attr('data-date') === targetDate) {
+          targetIndex = i;
+          return false; // break
+        }
+      });
 
-              cy.log(`ELEMENT DRAG: From ${startTime} to ${dragEndTime}`);
+      if (targetIndex === -1) {
+        throw new Error(`Could not find column header for date ${targetDate}`);
+      }
 
-              // Trigger mousedown on START SLOT
-              cy.wrap($start)
-                .trigger('mousedown', {
-                  button: 0,
-                  buttons: 1,
-                  which: 1, // Important for some listeners
-                  force: true,
-                  view: window
-                })
-                .wait(300);
+      // Now get the corresponding body column by index
+      // Now get the corresponding body column by index (excluding axis column if present)
+      cy.get(`.fc-timegrid-col:not(.fc-timegrid-axis)`).eq(targetIndex).then($col => {
+        const colRect = $col[0].getBoundingClientRect();
+        const colX = colRect.left + 20;
+        cy.log(`COLUMN FOUND (b Index ${targetIndex}): data-date=${$col.attr('data-date')}, colX=${colX}`);
 
-              // Trigger mousemove on END SLOT
-              cy.wrap($end)
-                .trigger('mousemove', {
-                  button: 0,
-                  buttons: 1,
-                  which: 1,
-                  force: true,
-                  view: window
-                })
-                .wait(300)
-                .trigger('mouseup', {
-                  button: 0,
-                  buttons: 0,
-                  which: 1,
-                  force: true,
-                  view: window
-                });
-            });
+        // Get start and end time slots (Global search, as slots are not children of columns)
+        cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`).then($startSlot => {
+          cy.get(`td.fc-timegrid-slot-lane[data-time="${dragEndTime}"]`).then($endSlot => {
+            const startRect = $startSlot[0].getBoundingClientRect();
+            const endRect = $endSlot[0].getBoundingClientRect();
+
+            const startY = startRect.top + (startRect.height / 2);
+            const endY = endRect.top + (endRect.height / 2);
+
+            cy.log(`REAL EVENTS DRAG: X=${colX}, StartY=${startY}, EndY=${endY}`);
+
+            cy.get('body')
+              .realMouseDown({ x: colX, y: startY, button: 'left' })
+              .realMouseMove(colX, endY, { position: 'topLeft' })
+              .realMouseUp({ x: colX, y: endY, button: 'left' });
           });
         });
+      });
 
-        // ============================================================
-        // 3. FILL MODAL
-        // ============================================================
-        cy.get('.p-dialog', { timeout: 15000 }).within(() => {
-          cy.contains('Add Work Hours').should('be.visible');
-          cy.contains(entry.startTime).should('exist');
-          cy.contains(durationStr).should('exist');
+      cy.wait(1500);
 
-          // Work Type
-          cy.contains('label', entry.workType).should('be.visible').click();
+      // ============================================================
+      // 3. FILL MODAL
+      // ============================================================
+      cy.get('.p-dialog', { timeout: 20000 }).should('exist').should('be.visible');
 
-          // Project (Conditional)
-          if (entry.workType === 'Project' && entry.project) {
-            cy.get('#projectId').should('be.visible').click();
+      cy.get('.p-dialog').within(() => {
+        cy.contains('Add Work Hours').should('be.visible');
+
+        const dateObj = new Date(entry.date + 'T12:00:00');
+        const expectedDay = dateObj.getDate();
+        const expectedYear = dateObj.getFullYear();
+
+        cy.get('.p-dialog-content').invoke('text').then((text) => {
+          if (!text.includes(expectedYear)) {
+            cy.get('.p-dialog-header').invoke('text').then(headerText => {
+              cy.log(`MODAL HEADER: ${headerText}`);
+              expect(headerText).to.contain(expectedDay);
+              expect(headerText).to.contain(expectedYear);
+            });
+          } else {
+            cy.log(`MODAL CONTENT: ${text}`);
+            expect(text).to.contain(expectedDay);
+            expect(text).to.contain(expectedYear);
           }
         });
 
-        // Handle Project Dropdown (Outside)
+        cy.wait(2000); // Wait for modal content (radio buttons, dropdowns) to load
+
+        cy.contains(entry.startTime).should('exist');
+        cy.contains(durationStr).should('exist');
+
+        cy.contains('label', entry.workType).should('be.visible').click();
+        cy.wait(2000); // Wait for projects to load after selecting Work Type
+
         if (entry.workType === 'Project' && entry.project) {
-          cy.get('ul[role="listbox"], .p-dropdown-items-wrapper, #projectId_list')
-            .should('be.visible')
-            .contains('li', entry.project)
-            .click();
+          cy.get('#projectId').should('be.visible').click();
         }
+      });
 
-        cy.get('.p-dialog').within(() => {
-          // Task Type
-          cy.contains('label', entry.taskType).scrollIntoView().should('be.visible').click();
+      if (entry.workType === 'Project' && entry.project) {
+        cy.get('ul[role="listbox"], .p-dropdown-items-wrapper, #projectId_list')
+          .should('be.visible')
+          .contains('li', entry.project)
+          .click();
+      }
 
-          // Description
-          cy.get('#description').clear().type(entry.description);
-        });
+      cy.get('.p-dialog').within(() => {
+        // Click on modal title to ensure dropdown/popups are closed
+        cy.get('.p-dialog-title').click({ force: true });
+        cy.wait(500);
 
-        // Save
-        cy.contains('button', 'Save Hours').scrollIntoView().should('be.visible').click();
-        cy.wait(2000);
+        // Task Type
+        cy.contains('label', entry.taskType).scrollIntoView().should('be.visible').click();
+        cy.get('#description').clear().type(entry.description);
+      });
+
+      cy.contains('button', 'Save Hours').scrollIntoView().should('be.visible').click();
+      cy.get('.p-dialog', { timeout: 5000 }).should('not.exist');
+      cy.wait(2000); // Longer settle time for calendar to re-render
+    }); // Close $headers block
+  };
+
+  // Helper: Process all entries for a contractor
+  const processContractor = (contractor, isLastContractor) => {
+    cy.log(`========================================`);
+    cy.log(`CONTRACTOR: ${contractor.username}`);
+    cy.log(`========================================`);
+
+    login(contractor.username, contractor.password);
+
+    // Process each entry sequentially
+    cy.wrap(contractor.entries).each((entry, entryIndex) => {
+      cy.log(`ENTRY ${entryIndex + 1}: ${entry.date} ${entry.startTime}-${entry.endTime}`);
+      processEntry(entry);
+    });
+
+    // Logout if not the last contractor
+    if (!isLastContractor) {
+      cy.log(`Logging out ${contractor.username}...`);
+      logout();
+    }
+  };
+
+  it('should create timecard events for multiple contractors from JSON fixture', () => {
+    cy.viewport(1920, 1080);
+
+    cy.fixture('timecard_entries').then((data) => {
+      const contractors = data.contractors;
+
+      // Process each contractor sequentially
+      cy.wrap(contractors).each((contractor, contractorIndex) => {
+        const isLastContractor = contractorIndex === contractors.length - 1;
+        processContractor(contractor, isLastContractor);
       });
     });
   });
