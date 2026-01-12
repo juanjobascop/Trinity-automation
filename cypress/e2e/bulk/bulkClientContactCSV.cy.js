@@ -2,8 +2,7 @@ import neatCSV from 'neat-csv';
 
 describe('Bulk Create Client Contacts from CSV', () => {
   beforeEach(() => {
-    // 1. Load CSV and alias it as 'contactsData'
-    // This ensures data is ready before the test starts
+    // 1. Load CSV and alias it as 'contactsData' 
     cy.fixture('csv/clientContact.csv')
       .then(neatCSV)
       .then((data) => {

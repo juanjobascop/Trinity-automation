@@ -1,3 +1,3 @@
-username,password,dobDay,dobMonth,dobYear,project,category,description,currency,amount,fee
-atreus,Sample123.,3,Jan,2026,Administrative,Other Expenses,Office Supplies,BOB,1050,10
-atreus,Sample123.,4,Jan,2026,Administrative,Other Expenses,Travel Expenses,BOB,1500,25
+username,password,date,project,category,description,currency,amount,fee
+atreus,Sample123.,03/01/2026,Administrative,Other Expenses,Office Supplies,BOB,1050,10
+atreus,Sample123.,04/01/2026,Administrative,Other Expenses,Travel Expenses,BOB,1500,25

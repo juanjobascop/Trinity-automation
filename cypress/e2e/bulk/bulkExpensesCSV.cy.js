@@ -23,14 +23,19 @@ describe('Bulk Create Expenses from CSV', () => {
 
       // --- NAVIGATE TO EXPENSES ---
       cy.contains('My expenses', { timeout: 10000 }).should('be.visible').click();
-      cy.wait(4000); // UI Breathing room
+      cy.wait(4000);
 
       // --- OPEN MODAL ---
       cy.get('button').contains('Create new').click();
       cy.get('.p-dialog', { timeout: 15000 }).should('be.visible');
 
+      //--- DATE PICKER ---
       // --- DATE PICKER ---
-      const formattedDate = `${expense.dobDay}/${expense.dobMonth}/${expense.dobYear}`;
+      const [day, monthNum, year] = expense.date.split('/');
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const monthName = monthNames[parseInt(monthNum, 10) - 1];
+      const formattedDate = `${parseInt(day, 10)}/${monthName}/${year}`;
+
       cy.get("input[name='date']")
         .click({ force: true })
         .clear({ force: true })

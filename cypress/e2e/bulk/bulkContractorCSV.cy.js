@@ -50,19 +50,24 @@ describe('Bulk Create Contractors from CSV', () => {
         .click();
       // --- CRITICAL FIX END ---
 
+
+
       // --- GENERAL INFORMATION ---
+      //--- First and Last Name ---
       cy.get('#firstName').clear().type(user.firstName);
       cy.get('#lastName').clear().type(user.lastName);
 
+      //--- Gender ---
       const genderMap = { "Male": "1", "Female": "2", "Unidentified": "3" };
       cy.get(`#genderCt-${genderMap[user.gender]}`, { timeout: 5000 })
         .should('exist')
         .click();
 
+      //--- Language ---
       cy.get('#preferredLanCt').click();
       cy.get('.p-select-overlay').contains('li', 'English').click();
 
-      // --- SUPERVISOR ---
+      //--- SUPERVISOR ---
       cy.get('#supervisor').click();
       cy.get('.p-select-overlay').should('be.visible');
       cy.contains('.p-select-overlay li[role="option"]', new RegExp(`^\\s*${user.supervisor}\\s*$`, ''))
@@ -73,27 +78,29 @@ describe('Bulk Create Contractors from CSV', () => {
       cy.get('.p-select-overlay').should('not.exist');
       cy.get('body').click(0, 0);
 
-      // --- COUNTRY ---
+      //--- COUNTRY ---
       cy.get('#countryCt').click();
       cy.get('input[role="searchbox"]').type(user.country);
       cy.get('.p-select-overlay').contains('li', user.country).click();
 
-      // --- TIMEZONE ---
+      //--- TIMEZONE ---
       cy.get('#timezoneCt').click();
       cy.get('input[role="searchbox"]').type(user.timezone);
       cy.get('.p-select-overlay li').contains(user.timezone).first().click();
 
-      // --- ACCOUNT DETAILS ---
+      //--- ACCOUNT DETAILS ---
+      //--- Password ---
       cy.get('#username').clear().type(user.username);
       cy.get('#password').find('input').type('Sample123.');
       cy.get('#confirmPassword').find('input').type('Sample123.');
 
+      //--- Role ---
       cy.get('p-multiselect').eq(1).click();
       cy.get('input[role="searchbox"]').type(user.role);
       cy.contains('li[role="option"]', user.role).click();
       cy.get('body').click(0, 0);
 
-      // --- DATE OF BIRTH ---
+      //--- DATE OF BIRTH ---
       const [day, monthNum, year] = user.birthDate.split('/');
       const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       const monthName = monthNames[parseInt(monthNum, 10) - 1];
@@ -107,14 +114,14 @@ describe('Bulk Create Contractors from CSV', () => {
       cy.get('body').click(0, 0);
       cy.get("input[name='birthDate']").trigger('blur');
 
-      // --- CONTACTS & ADDRESS ---
+      //--- CONTACTS & ADDRESS ---
       cy.get('#address').clear().type(user.address);
       cy.get('#officeEmail').clear().type(user.officeEmail);
       cy.get('#email').clear().type(user.personalEmail);
       cy.get('#whatsapp').clear().type(user.whatsapp);
       cy.get('#phone').clear().type(user.whatsapp);
 
-      // --- FINAL SUBMIT ---
+      //--- FINAL SUBMIT ---
       cy.wait(1000); // Small buffer for stability
       cy.get('button.btn-primary').contains('Create New Contractor').click({ force: true });
 
