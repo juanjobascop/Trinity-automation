@@ -1,0 +1,3 @@
+projectCode,projectName,startYear,startMonth,startDay,projectType,description,status,clientName,contactName,internalManager,accountManager,mainLanguage
+Auto99,ProjectName5,2021,Jan,8,Type1,This is a sample project description,Active,AutomationContact,ContactFirstName,Admin User,Admin User,English
+Auto88,ProjectName6,2023,Mar,15,Type2,Second project description,Active,AutomationContact,ContactFirstName,Admin User,Admin User,Spanish

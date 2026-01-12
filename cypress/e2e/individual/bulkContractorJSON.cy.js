@@ -6,6 +6,7 @@ describe('Bulk Create Contractors', () => {
 
     // 2. Login using your custom command
     cy.login('admin', 'sample');
+    cy.wait(4000);
 
     // 3. Setup intercept for the dictionary loading (Status, Gender, etc.)
     // Move intercept here so it persists across all iterations if needed (though aliases reset per test, beforeEach runs per test)
@@ -16,6 +17,7 @@ describe('Bulk Create Contractors', () => {
 
   it('Loops through JSON to create multiple users', function () {
     this.data.forEach((user) => {
+      cy.wait(3000);
       // Navigate to the list
       cy.contains('Contractors').should('be.visible').click();
       /* 
@@ -47,6 +49,7 @@ describe('Bulk Create Contractors', () => {
       // --- GENERAL INFORMATION ---
       cy.get('#firstName').clear().type(user.firstName);
       cy.get('#lastName').clear().type(user.lastName);
+
 
       // Robustly select 'Active' by text, then find the radio input associated with it
       // or simply rely on the text being clickable if the input is hidden

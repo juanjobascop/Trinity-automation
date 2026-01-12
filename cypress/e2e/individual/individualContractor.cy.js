@@ -1,9 +1,6 @@
 describe('Create new Contractor', () => {
   it('logs in and navigates to Contractor', () => {
 
-
-
-
     cy.visit('http://154.38.173.164:6980');
 
     cy.get('input[name="username"]', { timeout: 10000 })
