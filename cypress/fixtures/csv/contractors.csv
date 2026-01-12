@@ -1,3 +1,3 @@
-status,firstName,lastName,gender,dobYear,dobMonth,dobDay,supervisor,country,timezone,username,officeEmail,personalEmail,whatsapp,role,address
-active,Cypresstest,One11111atest,Male,1988,Jan,8,Admin User,Bolivia,Bolivia,cypresstest11,test11@test.com,personatesta2@test.com,123456789101,Contractor,Address 11231231123123
-active,CypressUser,Two1testa,Female,2010,May,15,Juan Bascope,United States,Alaska,cypresstest12a,test21@test.com,personaltesa2t@test.com,098765431211,Administrator,Address 2 12312312311231
+status,firstName,lastName,gender,birthDate,supervisor,country,timezone,username,officeEmail,personalEmail,whatsapp,role,address
+active,1Cypresstest,One111111atest,Male,08/01/1988,Admin User,Bolivia,Bolivia,cypresstest1111,test11@test.com,personatesta211@test.com,123456789101,Contractor,Address 11231231123123
+active,1CypressUser,Two11testa,Female,15/05/2010,Juan Bascope,United States,Alaska,cypresstest1112a,test21@test.com,personaltesa112t@test.com,098765431211,Administrator,Address 2 12312312311231
