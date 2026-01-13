@@ -1,0 +1,3 @@
+clientName,shortName,website,hqAddress,phone,emailAddress,description,clientType,preferredLanguage,sourcedBy,country,sectors,languages,status,logoFile
+Estebann,Test,testing.qa,Tarija - cercado,1234567890,Test@qa.com,Test description,For Profit,English,Sales,Bolivia,Animal protection|Education,Spanish|English,Active,Test_image_640x426.png
+Acme Corpp,Acme,acme.qa,La Paz - central,0987654321,contact@acme.com,Bulk test entry,Donor,Spanish,Other,Bolivia,Environment|Education,English,Active,Test_image_640x426.png

@@ -1,0 +1,3 @@
+searchName,contractorName,rate,currency,timezoneSearch,timezoneSelect,areaSearch,areaSelect,position,startDate,finishDate,notes,documentFile
+maria intern,lopez,20,USD,bolivia,UTC−04:00 (Bolivia/Atlantic Standard),quality,Quality Assurance,QA Lead,10/Jan/2026,01/Dec/2026,This is a note for the contractor.,testDoc.txt
+CypressUser,Twotesta,35,ARS,alaska,UTC-09:00 (Alaska),development,Software Engineering,Developer,15/Feb/2026,15/Nov/2026,Sample note for testing.,testDoc.txt

@@ -1,0 +1,7 @@
+username,password,date,startTime,endTime,workType,project,taskType,description
+atreus,Sample123.,2026-01-13,09:00,11:00,Project,Trinity2,Bug Fix,First bulk entry: Project work.
+atreus,Sample123.,2026-01-13,11:00,14:00,Project,Trinity2,Bug Fix,First bulk entry: Project work.
+atreus,Sample123.,2026-01-13,14:00,18:00,Project,Trinity2,Bug Fix,First bulk entry: Project work.
+atreus,Sample123.,2026-01-13,14:00,15:30,Administrative,,Representation / External Relations,Administrative work example.
+Esteban,Sample123.,2026-01-13,09:00,11:00,Project,Trinity2,Bug Fix,First bulk entry: Project work.
+Esteban,Sample123.,2026-01-13,14:00,15:30,Administrative,,Representation / External Relations,Administrative work example.
