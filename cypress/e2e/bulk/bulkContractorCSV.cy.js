@@ -78,8 +78,8 @@ describe('Bulk Create Contractors from CSV', () => {
         .should('be.visible')
         .click({ force: true });
 
+      cy.get('body').type('{esc}');
       cy.get('.p-select-overlay').should('not.exist');
-      cy.get('body').click(0, 0);
 
       //--- COUNTRY ---
       cy.get('#countryCt').click();
