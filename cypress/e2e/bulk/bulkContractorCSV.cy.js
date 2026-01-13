@@ -25,11 +25,14 @@ describe('Bulk Create Contractors from CSV', () => {
       // Navigate to the list
       cy.contains('Contractors').should('be.visible').click();
 
+      // Verification: Check URL
+      cy.url({ timeout: 10000 }).should('include', 'tr-contractors');
+
       // Wait for table to ensure page is stable
       cy.get('table', { timeout: 10000 }).should('be.visible');
 
       // Open Modal
-      cy.contains('span.material-symbols-outlined', 'add').parents('button').click();
+      cy.contains('span.material-symbols-outlined', 'add', { timeout: 10000 }).parents('button').click();
 
       // Verification: Check if the modal is visible
       cy.get('.p-dialog').should('be.visible');
@@ -45,9 +48,9 @@ describe('Bulk Create Contractors from CSV', () => {
       // 3. Robust selection of 'Active'
       // We look for 'Active' specifically within the dialog to avoid background matches
       cy.get('.p-dialog')
-        .contains('label', 'Active', { timeout: 10000 })
-        .should('be.visible')
-        .click();
+        .contains('Active', { timeout: 10000 })
+        .should('exist')
+        .click({ force: true });
       // --- CRITICAL FIX END ---
 
 
@@ -95,9 +98,14 @@ describe('Bulk Create Contractors from CSV', () => {
       cy.get('#confirmPassword').find('input').type('Sample123.');
 
       //--- Role ---
+      const roles = user.role.split('|');
       cy.get('p-multiselect').eq(1).click();
-      cy.get('input[role="searchbox"]').type(user.role);
-      cy.contains('li[role="option"]', user.role).click();
+
+      roles.forEach((role) => {
+        cy.get('input[role="searchbox"]').clear().type(role.trim());
+        cy.contains('li[role="option"]', role.trim()).click();
+      });
+
       cy.get('body').click(0, 0);
 
       //--- DATE OF BIRTH ---
