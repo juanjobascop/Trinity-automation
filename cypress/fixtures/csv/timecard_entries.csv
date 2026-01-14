@@ -1,0 +1,481 @@
+userId,Contractor Name,username,password,workTypeCt,workType,projectId,project,typeTaskCt,taskType,description,date,start,startTime,end,endTime,hours
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-05,2026-01-05T09:00:00.000Z,9:00,2026-01-05T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,execute smoke tests,2026-01-05,2026-01-05T09:15:00.000Z,9:15,2026-01-05T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,validate login defects,2026-01-05,2026-01-05T11:15:00.000Z,11:15,2026-01-05T12:15:00.000Z,12:15,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,update internal notes,2026-01-05,2026-01-05T12:15:00.000Z,12:15,2026-01-05T13:00:00.000Z,13:00,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,sprint grooming,2026-01-05,2026-01-05T14:00:00.000Z,14:00,2026-01-05T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,create test cases – login,2026-01-05,2026-01-05T15:00:00.000Z,15:00,2026-01-05T17:00:00.000Z,17:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,support dev queries,2026-01-05,2026-01-05T17:00:00.000Z,17:00,2026-01-05T18:00:00.000Z,18:00,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-06,2026-01-06T09:00:00.000Z,9:00,2026-01-06T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,regression testing,2026-01-06,2026-01-06T09:15:00.000Z,9:15,2026-01-06T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,4,Documentation,update test plan,2026-01-06,2026-01-06T11:15:00.000Z,11:15,2026-01-06T12:30:00.000Z,12:30,1.3
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,3,Representation / External Relations,client follow-up,2026-01-06,2026-01-06T12:30:00.000Z,12:30,2026-01-06T13:00:00.000Z,13:00,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,sprint review,2026-01-06,2026-01-06T14:00:00.000Z,14:00,2026-01-06T15:30:00.000Z,15:30,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,retest fixed issues,2026-01-06,2026-01-06T15:30:00.000Z,15:30,2026-01-06T18:00:00.000Z,18:00,2.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,9,Team Evaluation & Performance Reviews,performance notes,2026-01-07,2026-01-07T09:00:00.000Z,9:00,2026-01-07T09:45:00.000Z,9:45,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,7,Research,investigate auth errors,2026-01-07,2026-01-07T09:45:00.000Z,9:45,2026-01-07T11:45:00.000Z,11:45,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,document findings,2026-01-07,2026-01-07T11:45:00.000Z,11:45,2026-01-07T12:45:00.000Z,12:45,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,sanity testing,2026-01-07,2026-01-07T14:00:00.000Z,14:00,2026-01-07T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,retrospective,2026-01-07,2026-01-07T15:00:00.000Z,15:00,2026-01-07T16:00:00.000Z,16:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,handle tickets,2026-01-07,2026-01-07T16:00:00.000Z,16:00,2026-01-07T18:00:00.000Z,18:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,10,"Recruitment, onboarding, and other HR administration.",onboarding review,2026-01-08,2026-01-08T09:00:00.000Z,9:00,2026-01-08T09:30:00.000Z,9:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,full functional testing,2026-01-08,2026-01-08T09:30:00.000Z,9:30,2026-01-08T11:30:00.000Z,11:30,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,1,Bug Fix,log defects,2026-01-08,2026-01-08T11:30:00.000Z,11:30,2026-01-08T12:30:00.000Z,12:30,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,admin follow-ups,2026-01-08,2026-01-08T12:30:00.000Z,12:30,2026-01-08T13:00:00.000Z,13:00,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,stakeholder sync,2026-01-08,2026-01-08T14:00:00.000Z,14:00,2026-01-08T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,update release notes,2026-01-08,2026-01-08T15:00:00.000Z,15:00,2026-01-08T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-09,2026-01-09T09:00:00.000Z,9:00,2026-01-09T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,final regression tests,2026-01-09,2026-01-09T09:15:00.000Z,9:15,2026-01-09T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,close test report,2026-01-09,2026-01-09T11:15:00.000Z,11:15,2026-01-09T12:45:00.000Z,12:45,1.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,weekly reporting,2026-01-09,2026-01-09T12:45:00.000Z,12:45,2026-01-09T13:00:00.000Z,13:00,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,retrospective,2026-01-09,2026-01-09T14:00:00.000Z,14:00,2026-01-09T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,close support tickets,2026-01-09,2026-01-09T15:00:00.000Z,15:00,2026-01-09T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-12,2026-01-12T09:00:00.000Z,9:00,2026-01-12T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,execute smoke tests,2026-01-12,2026-01-12T09:15:00.000Z,9:15,2026-01-12T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,validate reported defects,2026-01-12,2026-01-12T11:15:00.000Z,11:15,2026-01-12T12:15:00.000Z,12:15,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,update internal notes,2026-01-12,2026-01-12T12:15:00.000Z,12:15,2026-01-12T13:00:00.000Z,13:00,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,sprint planning,2026-01-12,2026-01-12T14:00:00.000Z,14:00,2026-01-12T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,update test cases,2026-01-12,2026-01-12T15:00:00.000Z,15:00,2026-01-12T17:00:00.000Z,17:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,dev support,2026-01-12,2026-01-12T17:00:00.000Z,17:00,2026-01-12T18:00:00.000Z,18:00,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-13,2026-01-13T09:00:00.000Z,9:00,2026-01-13T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,regression testing,2026-01-13,2026-01-13T09:15:00.000Z,9:15,2026-01-13T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,4,Documentation,review requirements,2026-01-13,2026-01-13T11:15:00.000Z,11:15,2026-01-13T12:30:00.000Z,12:30,1.3
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,3,Representation / External Relations,client coordination,2026-01-13,2026-01-13T12:30:00.000Z,12:30,2026-01-13T13:00:00.000Z,13:00,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,sprint review,2026-01-13,2026-01-13T14:00:00.000Z,14:00,2026-01-13T15:30:00.000Z,15:30,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,retest fixes,2026-01-13,2026-01-13T15:30:00.000Z,15:30,2026-01-13T18:00:00.000Z,18:00,2.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,9,Team Evaluation & Performance Reviews,performance follow-up,2026-01-14,2026-01-14T09:00:00.000Z,9:00,2026-01-14T09:45:00.000Z,9:45,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,7,Research,investigate edge cases,2026-01-14,2026-01-14T09:45:00.000Z,9:45,2026-01-14T11:45:00.000Z,11:45,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,document findings,2026-01-14,2026-01-14T11:45:00.000Z,11:45,2026-01-14T13:00:00.000Z,13:00,1.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,sanity testing,2026-01-14,2026-01-14T14:00:00.000Z,14:00,2026-01-14T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,retrospective meeting,2026-01-14,2026-01-14T15:00:00.000Z,15:00,2026-01-14T16:00:00.000Z,16:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,resolve tickets,2026-01-14,2026-01-14T16:00:00.000Z,16:00,2026-01-14T18:00:00.000Z,18:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,10,"Recruitment, onboarding, and other HR administration.",onboarding support,2026-01-15,2026-01-15T09:00:00.000Z,9:00,2026-01-15T09:30:00.000Z,9:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,functional testing,2026-01-15,2026-01-15T09:30:00.000Z,9:30,2026-01-15T11:30:00.000Z,11:30,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,1,Bug Fix,log new defects,2026-01-15,2026-01-15T11:30:00.000Z,11:30,2026-01-15T13:00:00.000Z,13:00,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,stakeholder sync,2026-01-15,2026-01-15T14:00:00.000Z,14:00,2026-01-15T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,update release notes,2026-01-15,2026-01-15T15:00:00.000Z,15:00,2026-01-15T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-16,2026-01-16T09:00:00.000Z,9:00,2026-01-16T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,final regression tests,2026-01-16,2026-01-16T09:15:00.000Z,9:15,2026-01-16T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,final QA report,2026-01-16,2026-01-16T11:15:00.000Z,11:15,2026-01-16T13:00:00.000Z,13:00,1.7
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,retrospective,2026-01-16,2026-01-16T14:00:00.000Z,14:00,2026-01-16T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,close remaining tickets,2026-01-16,2026-01-16T15:00:00.000Z,15:00,2026-01-16T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-19,2026-01-19T09:00:00.000Z,9:00,2026-01-19T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,smoke testing,2026-01-19,2026-01-19T09:15:00.000Z,9:15,2026-01-19T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,validate defects,2026-01-19,2026-01-19T11:15:00.000Z,11:15,2026-01-19T12:15:00.000Z,12:15,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,internal follow-ups,2026-01-19,2026-01-19T12:15:00.000Z,12:15,2026-01-19T13:00:00.000Z,13:00,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,sprint planning,2026-01-19,2026-01-19T14:00:00.000Z,14:00,2026-01-19T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,update test cases,2026-01-19,2026-01-19T15:00:00.000Z,15:00,2026-01-19T17:00:00.000Z,17:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,dev support,2026-01-19,2026-01-19T17:00:00.000Z,17:00,2026-01-19T18:00:00.000Z,18:00,1.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-20,2026-01-20T09:00:00.000Z,9:00,2026-01-20T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,regression testing,2026-01-20,2026-01-20T09:15:00.000Z,9:15,2026-01-20T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,4,Documentation,update test plan,2026-01-20,2026-01-20T11:15:00.000Z,11:15,2026-01-20T12:30:00.000Z,12:30,1.3
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,3,Representation / External Relations,client coordination,2026-01-20,2026-01-20T12:30:00.000Z,12:30,2026-01-20T13:00:00.000Z,13:00,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,sprint review,2026-01-20,2026-01-20T14:00:00.000Z,14:00,2026-01-20T15:30:00.000Z,15:30,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,retest fixes,2026-01-20,2026-01-20T15:30:00.000Z,15:30,2026-01-20T18:00:00.000Z,18:00,2.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,9,Team Evaluation & Performance Reviews,performance notes,2026-01-21,2026-01-21T09:00:00.000Z,9:00,2026-01-21T09:45:00.000Z,9:45,0.8
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,7,Research,investigate edge cases,2026-01-21,2026-01-21T09:45:00.000Z,9:45,2026-01-21T11:45:00.000Z,11:45,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,document findings,2026-01-21,2026-01-21T11:45:00.000Z,11:45,2026-01-21T13:00:00.000Z,13:00,1.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,sanity testing,2026-01-21,2026-01-21T14:00:00.000Z,14:00,2026-01-21T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,retrospective,2026-01-21,2026-01-21T15:00:00.000Z,15:00,2026-01-21T16:00:00.000Z,16:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,resolve tickets,2026-01-21,2026-01-21T16:00:00.000Z,16:00,2026-01-21T18:00:00.000Z,18:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,10,"Recruitment, onboarding, and other HR administration.",onboarding activities,2026-01-22,2026-01-22T09:00:00.000Z,9:00,2026-01-22T09:30:00.000Z,9:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,6,QA,functional testing,2026-01-22,2026-01-22T09:30:00.000Z,9:30,2026-01-22T11:30:00.000Z,11:30,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,1,Bug Fix,log defects,2026-01-22,2026-01-22T11:30:00.000Z,11:30,2026-01-22T13:00:00.000Z,13:00,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,5,Meeting,stakeholder sync,2026-01-22,2026-01-22T14:00:00.000Z,14:00,2026-01-22T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,update release notes,2026-01-22,2026-01-22T15:00:00.000Z,15:00,2026-01-22T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,daily standup,2026-01-23,2026-01-23T09:00:00.000Z,9:00,2026-01-23T09:15:00.000Z,9:15,0.2
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,final regression testing,2026-01-23,2026-01-23T09:15:00.000Z,9:15,2026-01-23T11:15:00.000Z,11:15,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,final QA report,2026-01-23,2026-01-23T11:15:00.000Z,11:15,2026-01-23T13:00:00.000Z,13:00,1.7
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,retrospective,2026-01-23,2026-01-23T14:00:00.000Z,14:00,2026-01-23T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,8,Support,close pending tickets,2026-01-23,2026-01-23T15:00:00.000Z,15:00,2026-01-23T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,Daily sync,2026-01-26,2026-01-26T09:00:00.000Z,9:00,2026-01-26T09:30:00.000Z,9:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Create test cases – profile,2026-01-26,2026-01-26T09:30:00.000Z,9:30,2026-01-26T11:30:00.000Z,11:30,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,Test execution – profile,2026-01-26,2026-01-26T11:30:00.000Z,11:30,2026-01-26T13:00:00.000Z,13:00,1.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,5,Meeting,Grooming session,2026-01-26,2026-01-26T14:00:00.000Z,14:00,2026-01-26T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,Validate reported bugs,2026-01-26,2026-01-26T15:00:00.000Z,15:00,2026-01-26T17:00:00.000Z,17:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,Update Jira tickets,2026-01-26,2026-01-26T17:00:00.000Z,17:00,2026-01-26T18:00:00.000Z,18:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,6,QA,Regression testing,2026-01-27,2026-01-27T09:00:00.000Z,9:00,2026-01-27T11:00:00.000Z,11:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,4,Documentation,Update test evidence,2026-01-27,2026-01-27T11:00:00.000Z,11:00,2026-01-27T13:00:00.000Z,13:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,QA alignment meeting,2026-01-27,2026-01-27T14:00:00.000Z,14:00,2026-01-27T14:30:00.000Z,14:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,7,Research,Analyze defects root cause,2026-01-27,2026-01-27T14:30:00.000Z,14:30,2026-01-27T16:30:00.000Z,16:30,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,Re-test fixed issues,2026-01-27,2026-01-27T16:30:00.000Z,16:30,2026-01-27T18:00:00.000Z,18:00,1.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,Sprint review,2026-01-28,2026-01-28T09:00:00.000Z,9:00,2026-01-28T10:00:00.000Z,10:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Create test cases – reports,2026-01-28,2026-01-28T10:00:00.000Z,10:00,2026-01-28T13:00:00.000Z,13:00,3.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,6,QA,Test execution – reports,2026-01-28,2026-01-28T14:00:00.000Z,14:00,2026-01-28T16:00:00.000Z,16:00,2.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,Update documentation,2026-01-28,2026-01-28T16:00:00.000Z,16:00,2026-01-28T18:00:00.000Z,18:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,Smoke testing,2026-01-29,2026-01-29T09:00:00.000Z,9:00,2026-01-29T11:00:00.000Z,11:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,Verify bug fixes,2026-01-29,2026-01-29T11:00:00.000Z,11:00,2026-01-29T13:00:00.000Z,13:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,5,Meeting,Client follow-up,2026-01-29,2026-01-29T14:00:00.000Z,14:00,2026-01-29T15:00:00.000Z,15:00,1.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,4,Documentation,Test report preparation,2026-01-29,2026-01-29T15:00:00.000Z,15:00,2026-01-29T18:00:00.000Z,18:00,3.0
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,1,General Meetings,Weekly sync,2026-01-30,2026-01-30T09:00:00.000Z,9:00,2026-01-30T09:30:00.000Z,9:30,0.5
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,6,QA,Full regression testing,2026-01-30,2026-01-30T09:30:00.000Z,9:30,2026-01-30T12:30:00.000Z,12:30,3.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Update test summary,2026-01-30,2026-01-30T12:30:00.000Z,12:30,2026-01-30T13:00:00.000Z,13:00,0.5
+1,Denis Concordel,Denis,Sample123.,2,administrative,,,11,Other Administrative Tasks,Close weekly reports,2026-01-30,2026-01-30T14:00:00.000Z,14:00,2026-01-30T16:00:00.000Z,16:00,2.0
+1,Denis Concordel,Denis,Sample123.,1,Project,COD2,Wingf of Children,6,QA,Final validation,2026-01-30,2026-01-30T16:00:00.000Z,16:00,2026-01-30T18:00:00.000Z,18:00,2.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrative,,,1,General Meetings,Daily coordination meeting,2026-01-02,2026-01-02T09:00:00.000Z,9:00,2026-01-02T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-02,2026-01-02T09:30:00.000Z,9:30,2026-01-02T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-02,2026-01-02T10:15:00.000Z,10:15,2026-01-02T11:30:00.000Z,11:30,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-02,2026-01-02T11:30:00.000Z,11:30,2026-01-02T12:45:00.000Z,12:45,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,7,Research,Team sync on sales pipeline,2026-01-02,2026-01-02T12:45:00.000Z,12:45,2026-01-02T13:00:00.000Z,13:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,10,,Assess new lead potential,2026-01-02,2026-01-02T14:00:00.000Z,14:00,2026-01-02T14:45:00.000Z,14:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,1,Bug Fix,Follow-up with key client,2026-01-02,2026-01-02T14:45:00.000Z,14:45,2026-01-02T15:45:00.000Z,15:45,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,2,Design,Assist with client onboarding,2026-01-02,2026-01-02T15:45:00.000Z,15:45,2026-01-02T17:00:00.000Z,17:00,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,8,Support,Draft new client proposal,2026-01-02,2026-01-02T17:00:00.000Z,17:00,2026-01-02T17:20:00.000Z,17:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-02,2026-01-02T17:20:00.000Z,17:20,2026-01-02T17:40:00.000Z,17:40,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-02,2026-01-02T17:40:00.000Z,17:40,2026-01-02T18:00:00.000Z,18:00,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-05,2026-01-05T09:00:00.000Z,9:00,2026-01-05T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,2,Design,Review of sales agreement,2026-01-05,2026-01-05T09:30:00.000Z,9:30,2026-01-05T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,9,Training,Demonstrate product to lead,2026-01-05,2026-01-05T10:15:00.000Z,10:15,2026-01-05T10:30:00.000Z,10:30,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-05,2026-01-05T10:30:00.000Z,10:30,2026-01-05T10:50:00.000Z,10:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-05,2026-01-05T10:50:00.000Z,10:50,2026-01-05T11:35:00.000Z,11:35,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-05,2026-01-05T11:35:00.000Z,11:35,2026-01-05T11:55:00.000Z,11:55,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-05,2026-01-05T11:55:00.000Z,11:55,2026-01-05T13:00:00.000Z,13:00,1.1
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,7,Research,Team sync on sales pipeline,2026-01-05,2026-01-05T14:00:00.000Z,14:00,2026-01-05T14:45:00.000Z,14:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,1,Bug Fix,Follow-up with key client,2026-01-05,2026-01-05T14:45:00.000Z,14:45,2026-01-05T15:05:00.000Z,15:05,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,5,Meeting,Update CRM records,2026-01-05,2026-01-05T15:05:00.000Z,15:05,2026-01-05T15:20:00.000Z,15:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-05,2026-01-05T15:20:00.000Z,15:20,2026-01-05T15:40:00.000Z,15:40,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-05,2026-01-05T15:40:00.000Z,15:40,2026-01-05T16:40:00.000Z,16:40,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,1,Bug Fix,Follow-up with key client,2026-01-05,2026-01-05T16:40:00.000Z,16:40,2026-01-05T17:25:00.000Z,17:25,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,8,Support,Draft new client proposal,2026-01-05,2026-01-05T17:25:00.000Z,17:25,2026-01-05T18:00:00.000Z,18:00,0.6
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-06,2026-01-06T09:00:00.000Z,9:00,2026-01-06T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-06,2026-01-06T09:30:00.000Z,9:30,2026-01-06T10:00:00.000Z,10:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,5,Meeting,Update CRM records,2026-01-06,2026-01-06T10:00:00.000Z,10:00,2026-01-06T10:20:00.000Z,10:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-06,2026-01-06T10:20:00.000Z,10:20,2026-01-06T11:35:00.000Z,11:35,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-06,2026-01-06T11:35:00.000Z,11:35,2026-01-06T12:20:00.000Z,12:20,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,4,Documentation,Analyze competitor offerings,2026-01-06,2026-01-06T12:20:00.000Z,12:20,2026-01-06T13:00:00.000Z,13:00,0.7
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-06,2026-01-06T14:00:00.000Z,14:00,2026-01-06T15:00:00.000Z,15:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,2,Design,Assist with client onboarding,2026-01-06,2026-01-06T15:00:00.000Z,15:00,2026-01-06T15:30:00.000Z,15:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,5,Meeting,Update CRM records,2026-01-06,2026-01-06T15:30:00.000Z,15:30,2026-01-06T16:45:00.000Z,16:45,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-06,2026-01-06T16:45:00.000Z,16:45,2026-01-06T18:00:00.000Z,18:00,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-07,2026-01-07T09:00:00.000Z,9:00,2026-01-07T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-07,2026-01-07T09:30:00.000Z,9:30,2026-01-07T09:50:00.000Z,9:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-07,2026-01-07T09:50:00.000Z,9:50,2026-01-07T10:50:00.000Z,10:50,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-07,2026-01-07T10:50:00.000Z,10:50,2026-01-07T11:35:00.000Z,11:35,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-07,2026-01-07T11:35:00.000Z,11:35,2026-01-07T12:50:00.000Z,12:50,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-07,2026-01-07T12:50:00.000Z,12:50,2026-01-07T13:00:00.000Z,13:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-07,2026-01-07T14:00:00.000Z,14:00,2026-01-07T14:45:00.000Z,14:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,3,Development,One-on-one coaching session,2026-01-07,2026-01-07T14:45:00.000Z,14:45,2026-01-07T15:05:00.000Z,15:05,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-07,2026-01-07T15:05:00.000Z,15:05,2026-01-07T16:05:00.000Z,16:05,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,2,Design,Assist with client onboarding,2026-01-07,2026-01-07T16:05:00.000Z,16:05,2026-01-07T16:50:00.000Z,16:50,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,Update CRM records,2026-01-07,2026-01-07T16:50:00.000Z,16:50,2026-01-07T17:05:00.000Z,17:05,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,2,Design,Review of sales agreement,2026-01-07,2026-01-07T17:05:00.000Z,17:05,2026-01-07T17:35:00.000Z,17:35,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,9,Training,Demonstrate product to lead,2026-01-07,2026-01-07T17:35:00.000Z,17:35,2026-01-07T18:00:00.000Z,18:00,0.4
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-08,2026-01-08T09:00:00.000Z,9:00,2026-01-08T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-08,2026-01-08T09:30:00.000Z,9:30,2026-01-08T10:00:00.000Z,10:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-08,2026-01-08T10:00:00.000Z,10:00,2026-01-08T10:30:00.000Z,10:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Analyze competitor offerings,2026-01-08,2026-01-08T10:30:00.000Z,10:30,2026-01-08T10:50:00.000Z,10:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,3,Development,One-on-one coaching session,2026-01-08,2026-01-08T10:50:00.000Z,10:50,2026-01-08T12:05:00.000Z,12:05,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-08,2026-01-08T12:05:00.000Z,12:05,2026-01-08T12:50:00.000Z,12:50,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,9,Training,Demonstrate product to lead,2026-01-08,2026-01-08T12:50:00.000Z,12:50,2026-01-08T13:00:00.000Z,13:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,7,Research,Team sync on sales pipeline,2026-01-08,2026-01-08T14:00:00.000Z,14:00,2026-01-08T14:30:00.000Z,14:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-08,2026-01-08T14:30:00.000Z,14:30,2026-01-08T14:50:00.000Z,14:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,10,,Assess new lead potential,2026-01-08,2026-01-08T14:50:00.000Z,14:50,2026-01-08T15:35:00.000Z,15:35,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-08,2026-01-08T15:35:00.000Z,15:35,2026-01-08T16:35:00.000Z,16:35,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-08,2026-01-08T16:35:00.000Z,16:35,2026-01-08T17:35:00.000Z,17:35,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-08,2026-01-08T17:35:00.000Z,17:35,2026-01-08T17:55:00.000Z,17:55,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-08,2026-01-08T17:55:00.000Z,17:55,2026-01-08T18:00:00.000Z,18:00,0.1
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-09,2026-01-09T09:00:00.000Z,9:00,2026-01-09T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-09,2026-01-09T09:30:00.000Z,9:30,2026-01-09T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,5,Meeting,Update CRM records,2026-01-09,2026-01-09T10:15:00.000Z,10:15,2026-01-09T10:45:00.000Z,10:45,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,8,Support,Draft new client proposal,2026-01-09,2026-01-09T10:45:00.000Z,10:45,2026-01-09T11:00:00.000Z,11:00,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,10,,Assess new lead potential,2026-01-09,2026-01-09T11:00:00.000Z,11:00,2026-01-09T11:20:00.000Z,11:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-09,2026-01-09T11:20:00.000Z,11:20,2026-01-09T12:35:00.000Z,12:35,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-09,2026-01-09T12:35:00.000Z,12:35,2026-01-09T13:00:00.000Z,13:00,0.4
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-09,2026-01-09T14:00:00.000Z,14:00,2026-01-09T15:15:00.000Z,15:15,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-09,2026-01-09T15:15:00.000Z,15:15,2026-01-09T16:00:00.000Z,16:00,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-09,2026-01-09T16:00:00.000Z,16:00,2026-01-09T16:15:00.000Z,16:15,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,8,Support,Draft new client proposal,2026-01-09,2026-01-09T16:15:00.000Z,16:15,2026-01-09T16:35:00.000Z,16:35,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-09,2026-01-09T16:35:00.000Z,16:35,2026-01-09T16:55:00.000Z,16:55,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-09,2026-01-09T16:55:00.000Z,16:55,2026-01-09T17:55:00.000Z,17:55,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-09,2026-01-09T17:55:00.000Z,17:55,2026-01-09T18:00:00.000Z,18:00,0.1
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-12,2026-01-12T09:00:00.000Z,9:00,2026-01-12T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,5,Meeting,Update CRM records,2026-01-12,2026-01-12T09:30:00.000Z,9:30,2026-01-12T10:00:00.000Z,10:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-12,2026-01-12T10:00:00.000Z,10:00,2026-01-12T10:30:00.000Z,10:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-12,2026-01-12T10:30:00.000Z,10:30,2026-01-12T11:45:00.000Z,11:45,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,1,Bug Fix,Follow-up with key client,2026-01-12,2026-01-12T11:45:00.000Z,11:45,2026-01-12T13:00:00.000Z,13:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-12,2026-01-12T14:00:00.000Z,14:00,2026-01-12T14:20:00.000Z,14:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,1,Bug Fix,Follow-up with key client,2026-01-12,2026-01-12T14:20:00.000Z,14:20,2026-01-12T15:20:00.000Z,15:20,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-12,2026-01-12T15:20:00.000Z,15:20,2026-01-12T16:35:00.000Z,16:35,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-12,2026-01-12T16:35:00.000Z,16:35,2026-01-12T17:35:00.000Z,17:35,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,9,Training,Demonstrate product to lead,2026-01-12,2026-01-12T17:35:00.000Z,17:35,2026-01-12T18:00:00.000Z,18:00,0.4
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-13,2026-01-13T09:00:00.000Z,9:00,2026-01-13T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,7,Research,Team sync on sales pipeline,2026-01-13,2026-01-13T09:30:00.000Z,9:30,2026-01-13T09:50:00.000Z,9:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,2,Design,Review of sales agreement,2026-01-13,2026-01-13T09:50:00.000Z,9:50,2026-01-13T11:05:00.000Z,11:05,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,5,Meeting,Update CRM records,2026-01-13,2026-01-13T11:05:00.000Z,11:05,2026-01-13T11:25:00.000Z,11:25,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-13,2026-01-13T11:25:00.000Z,11:25,2026-01-13T12:40:00.000Z,12:40,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-13,2026-01-13T12:40:00.000Z,12:40,2026-01-13T13:00:00.000Z,13:00,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-13,2026-01-13T14:00:00.000Z,14:00,2026-01-13T14:15:00.000Z,14:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,7,Research,Team sync on sales pipeline,2026-01-13,2026-01-13T14:15:00.000Z,14:15,2026-01-13T15:30:00.000Z,15:30,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-13,2026-01-13T15:30:00.000Z,15:30,2026-01-13T16:45:00.000Z,16:45,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,7,Research,Team sync on sales pipeline,2026-01-13,2026-01-13T16:45:00.000Z,16:45,2026-01-13T18:00:00.000Z,18:00,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-14,2026-01-14T09:00:00.000Z,9:00,2026-01-14T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,5,Meeting,Update CRM records,2026-01-14,2026-01-14T09:30:00.000Z,9:30,2026-01-14T10:30:00.000Z,10:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-14,2026-01-14T10:30:00.000Z,10:30,2026-01-14T11:30:00.000Z,11:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,10,,Assess new lead potential,2026-01-14,2026-01-14T11:30:00.000Z,11:30,2026-01-14T12:30:00.000Z,12:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-14,2026-01-14T12:30:00.000Z,12:30,2026-01-14T13:00:00.000Z,13:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,10,,Assess new lead potential,2026-01-14,2026-01-14T14:00:00.000Z,14:00,2026-01-14T14:15:00.000Z,14:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,2,Design,Review of sales agreement,2026-01-14,2026-01-14T14:15:00.000Z,14:15,2026-01-14T14:35:00.000Z,14:35,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-14,2026-01-14T14:35:00.000Z,14:35,2026-01-14T14:55:00.000Z,14:55,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-14,2026-01-14T14:55:00.000Z,14:55,2026-01-14T15:10:00.000Z,15:10,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,4,Documentation,Analyze competitor offerings,2026-01-14,2026-01-14T15:10:00.000Z,15:10,2026-01-14T16:10:00.000Z,16:10,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-14,2026-01-14T16:10:00.000Z,16:10,2026-01-14T16:30:00.000Z,16:30,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-14,2026-01-14T16:30:00.000Z,16:30,2026-01-14T17:30:00.000Z,17:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,9,Training,Demonstrate product to lead,2026-01-14,2026-01-14T17:30:00.000Z,17:30,2026-01-14T18:00:00.000Z,18:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-15,2026-01-15T09:00:00.000Z,9:00,2026-01-15T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,Update CRM records,2026-01-15,2026-01-15T09:30:00.000Z,9:30,2026-01-15T10:30:00.000Z,10:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-15,2026-01-15T10:30:00.000Z,10:30,2026-01-15T11:45:00.000Z,11:45,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,4,Documentation,Analyze competitor offerings,2026-01-15,2026-01-15T11:45:00.000Z,11:45,2026-01-15T13:00:00.000Z,13:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-15,2026-01-15T14:00:00.000Z,14:00,2026-01-15T15:00:00.000Z,15:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,8,Support,Draft new client proposal,2026-01-15,2026-01-15T15:00:00.000Z,15:00,2026-01-15T15:30:00.000Z,15:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,2,Design,Review of sales agreement,2026-01-15,2026-01-15T15:30:00.000Z,15:30,2026-01-15T15:50:00.000Z,15:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,4,Documentation,Assist with client onboarding,2026-01-15,2026-01-15T15:50:00.000Z,15:50,2026-01-15T16:10:00.000Z,16:10,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-15,2026-01-15T16:10:00.000Z,16:10,2026-01-15T16:30:00.000Z,16:30,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Assist with client onboarding,2026-01-15,2026-01-15T16:30:00.000Z,16:30,2026-01-15T17:30:00.000Z,17:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-15,2026-01-15T17:30:00.000Z,17:30,2026-01-15T18:00:00.000Z,18:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-16,2026-01-16T09:00:00.000Z,9:00,2026-01-16T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-16,2026-01-16T09:30:00.000Z,9:30,2026-01-16T10:30:00.000Z,10:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-16,2026-01-16T10:30:00.000Z,10:30,2026-01-16T10:50:00.000Z,10:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,1,Bug Fix,Follow-up with key client,2026-01-16,2026-01-16T10:50:00.000Z,10:50,2026-01-16T11:20:00.000Z,11:20,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-16,2026-01-16T11:20:00.000Z,11:20,2026-01-16T11:35:00.000Z,11:35,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,2,Design,Review of sales agreement,2026-01-16,2026-01-16T11:35:00.000Z,11:35,2026-01-16T11:50:00.000Z,11:50,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-16,2026-01-16T11:50:00.000Z,11:50,2026-01-16T13:00:00.000Z,13:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,3,Development,One-on-one coaching session,2026-01-16,2026-01-16T14:00:00.000Z,14:00,2026-01-16T15:15:00.000Z,15:15,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-16,2026-01-16T15:15:00.000Z,15:15,2026-01-16T16:15:00.000Z,16:15,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,9,Training,Demonstrate product to lead,2026-01-16,2026-01-16T16:15:00.000Z,16:15,2026-01-16T16:30:00.000Z,16:30,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,9,Training,Demonstrate product to lead,2026-01-16,2026-01-16T16:30:00.000Z,16:30,2026-01-16T17:30:00.000Z,17:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-16,2026-01-16T17:30:00.000Z,17:30,2026-01-16T18:00:00.000Z,18:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-19,2026-01-19T09:00:00.000Z,9:00,2026-01-19T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-19,2026-01-19T09:30:00.000Z,9:30,2026-01-19T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,8,Support,Draft new client proposal,2026-01-19,2026-01-19T10:15:00.000Z,10:15,2026-01-19T10:45:00.000Z,10:45,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,Update CRM records,2026-01-19,2026-01-19T10:45:00.000Z,10:45,2026-01-19T11:15:00.000Z,11:15,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,10,,Assess new lead potential,2026-01-19,2026-01-19T11:15:00.000Z,11:15,2026-01-19T12:30:00.000Z,12:30,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,7,Research,Team sync on sales pipeline,2026-01-19,2026-01-19T12:30:00.000Z,12:30,2026-01-19T13:00:00.000Z,13:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-19,2026-01-19T14:00:00.000Z,14:00,2026-01-19T14:45:00.000Z,14:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,7,Research,Assist with client onboarding,2026-01-19,2026-01-19T14:45:00.000Z,14:45,2026-01-19T15:00:00.000Z,15:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,7,Research,Team sync on sales pipeline,2026-01-19,2026-01-19T15:00:00.000Z,15:00,2026-01-19T15:30:00.000Z,15:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,7,Research,Team sync on sales pipeline,2026-01-19,2026-01-19T15:30:00.000Z,15:30,2026-01-19T15:45:00.000Z,15:45,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-19,2026-01-19T15:45:00.000Z,15:45,2026-01-19T16:45:00.000Z,16:45,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-19,2026-01-19T16:45:00.000Z,16:45,2026-01-19T17:15:00.000Z,17:15,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-19,2026-01-19T17:15:00.000Z,17:15,2026-01-19T18:00:00.000Z,18:00,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-20,2026-01-20T09:00:00.000Z,9:00,2026-01-20T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,9,Training,Demonstrate product to lead,2026-01-20,2026-01-20T09:30:00.000Z,9:30,2026-01-20T10:00:00.000Z,10:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,7,Research,Assist with client onboarding,2026-01-20,2026-01-20T10:00:00.000Z,10:00,2026-01-20T10:30:00.000Z,10:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,7,Research,Team sync on sales pipeline,2026-01-20,2026-01-20T10:30:00.000Z,10:30,2026-01-20T11:45:00.000Z,11:45,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-20,2026-01-20T11:45:00.000Z,11:45,2026-01-20T12:15:00.000Z,12:15,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-20,2026-01-20T12:15:00.000Z,12:15,2026-01-20T13:00:00.000Z,13:00,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,9,Training,Demonstrate product to lead,2026-01-20,2026-01-20T14:00:00.000Z,14:00,2026-01-20T15:00:00.000Z,15:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-20,2026-01-20T15:00:00.000Z,15:00,2026-01-20T16:15:00.000Z,16:15,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,9,Training,Demonstrate product to lead,2026-01-20,2026-01-20T16:15:00.000Z,16:15,2026-01-20T17:15:00.000Z,17:15,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-20,2026-01-20T17:15:00.000Z,17:15,2026-01-20T17:45:00.000Z,17:45,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,5,Meeting,Update CRM records,2026-01-20,2026-01-20T17:45:00.000Z,17:45,2026-01-20T18:00:00.000Z,18:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-21,2026-01-21T09:00:00.000Z,9:00,2026-01-21T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,3,Development,One-on-one coaching session,2026-01-21,2026-01-21T09:30:00.000Z,9:30,2026-01-21T10:45:00.000Z,10:45,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,8,Support,Draft new client proposal,2026-01-21,2026-01-21T10:45:00.000Z,10:45,2026-01-21T11:00:00.000Z,11:00,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,10,,Assess new lead potential,2026-01-21,2026-01-21T11:00:00.000Z,11:00,2026-01-21T11:45:00.000Z,11:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,4,Documentation,Analyze competitor offerings,2026-01-21,2026-01-21T11:45:00.000Z,11:45,2026-01-21T12:05:00.000Z,12:05,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-21,2026-01-21T12:05:00.000Z,12:05,2026-01-21T13:00:00.000Z,13:00,0.9
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-21,2026-01-21T14:00:00.000Z,14:00,2026-01-21T14:15:00.000Z,14:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-21,2026-01-21T14:15:00.000Z,14:15,2026-01-21T14:30:00.000Z,14:30,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,10,,Assess new lead potential,2026-01-21,2026-01-21T14:30:00.000Z,14:30,2026-01-21T15:30:00.000Z,15:30,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-21,2026-01-21T15:30:00.000Z,15:30,2026-01-21T15:45:00.000Z,15:45,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,2,Design,Review of sales agreement,2026-01-21,2026-01-21T15:45:00.000Z,15:45,2026-01-21T16:15:00.000Z,16:15,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-21,2026-01-21T16:15:00.000Z,16:15,2026-01-21T16:35:00.000Z,16:35,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-21,2026-01-21T16:35:00.000Z,16:35,2026-01-21T17:35:00.000Z,17:35,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-21,2026-01-21T17:35:00.000Z,17:35,2026-01-21T18:00:00.000Z,18:00,0.4
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-22,2026-01-22T09:00:00.000Z,9:00,2026-01-22T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-22,2026-01-22T09:30:00.000Z,9:30,2026-01-22T10:00:00.000Z,10:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-22,2026-01-22T10:00:00.000Z,10:00,2026-01-22T11:00:00.000Z,11:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-22,2026-01-22T11:00:00.000Z,11:00,2026-01-22T12:00:00.000Z,12:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,7,Research,Team sync on sales pipeline,2026-01-22,2026-01-22T12:00:00.000Z,12:00,2026-01-22T12:15:00.000Z,12:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,4,Documentation,Analyze competitor offerings,2026-01-22,2026-01-22T12:15:00.000Z,12:15,2026-01-22T12:45:00.000Z,12:45,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,5,Meeting,Update CRM records,2026-01-22,2026-01-22T12:45:00.000Z,12:45,2026-01-22T13:00:00.000Z,13:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,8,Support,Draft new client proposal,2026-01-22,2026-01-22T14:00:00.000Z,14:00,2026-01-22T14:45:00.000Z,14:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,9,Training,Demonstrate product to lead,2026-01-22,2026-01-22T14:45:00.000Z,14:45,2026-01-22T16:00:00.000Z,16:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-22,2026-01-22T16:00:00.000Z,16:00,2026-01-22T16:15:00.000Z,16:15,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,1,Bug Fix,Follow-up with key client,2026-01-22,2026-01-22T16:15:00.000Z,16:15,2026-01-22T17:30:00.000Z,17:30,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,5,Meeting,Update CRM records,2026-01-22,2026-01-22T17:30:00.000Z,17:30,2026-01-22T18:00:00.000Z,18:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-23,2026-01-23T09:00:00.000Z,9:00,2026-01-23T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-23,2026-01-23T09:30:00.000Z,9:30,2026-01-23T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,4,Documentation,Analyze competitor offerings,2026-01-23,2026-01-23T10:15:00.000Z,10:15,2026-01-23T11:15:00.000Z,11:15,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,3,Development,One-on-one coaching session,2026-01-23,2026-01-23T11:15:00.000Z,11:15,2026-01-23T11:30:00.000Z,11:30,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,5,Meeting,Update CRM records,2026-01-23,2026-01-23T11:30:00.000Z,11:30,2026-01-23T11:50:00.000Z,11:50,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,COD5,Peace Bridges,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-23,2026-01-23T11:50:00.000Z,11:50,2026-01-23T13:00:00.000Z,13:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,8,Support,Draft new client proposal,2026-01-23,2026-01-23T14:00:00.000Z,14:00,2026-01-23T14:20:00.000Z,14:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,COD9,Urban Seed,6,Payroll,Assist with client onboarding,2026-01-23,2026-01-23T14:20:00.000Z,14:20,2026-01-23T14:40:00.000Z,14:40,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,2,Design,Review of sales agreement,2026-01-23,2026-01-23T14:40:00.000Z,14:40,2026-01-23T15:00:00.000Z,15:00,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-23,2026-01-23T15:00:00.000Z,15:00,2026-01-23T15:45:00.000Z,15:45,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,9,Training,Demonstrate product to lead,2026-01-23,2026-01-23T15:45:00.000Z,15:45,2026-01-23T16:05:00.000Z,16:05,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,10,,Assess new lead potential,2026-01-23,2026-01-23T16:05:00.000Z,16:05,2026-01-23T17:20:00.000Z,17:20,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-23,2026-01-23T17:20:00.000Z,17:20,2026-01-23T18:00:00.000Z,18:00,0.7
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-26,2026-01-26T09:00:00.000Z,9:00,2026-01-26T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-26,2026-01-26T09:30:00.000Z,9:30,2026-01-26T09:45:00.000Z,9:45,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,5,Meeting,Update CRM records,2026-01-26,2026-01-26T09:45:00.000Z,9:45,2026-01-26T11:00:00.000Z,11:00,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,5,Meeting,Update CRM records,2026-01-26,2026-01-26T11:00:00.000Z,11:00,2026-01-26T12:15:00.000Z,12:15,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,7,Research,Team sync on sales pipeline,2026-01-26,2026-01-26T12:15:00.000Z,12:15,2026-01-26T13:00:00.000Z,13:00,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,6,Payroll,Assist with client onboarding,2026-01-26,2026-01-26T14:00:00.000Z,14:00,2026-01-26T15:15:00.000Z,15:15,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,8,Support,Draft new client proposal,2026-01-26,2026-01-26T15:15:00.000Z,15:15,2026-01-26T16:30:00.000Z,16:30,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-26,2026-01-26T16:30:00.000Z,16:30,2026-01-26T16:45:00.000Z,16:45,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-26,2026-01-26T16:45:00.000Z,16:45,2026-01-26T18:00:00.000Z,18:00,1.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-27,2026-01-27T09:00:00.000Z,9:00,2026-01-27T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,10,,Assess new lead potential,2026-01-27,2026-01-27T09:30:00.000Z,9:30,2026-01-27T10:45:00.000Z,10:45,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,4,New or Cross-cutting Projects,Analyze competitor offerings,2026-01-27,2026-01-27T10:45:00.000Z,10:45,2026-01-27T11:30:00.000Z,11:30,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,10,"Recruitment, onboarding, and other HR administration.",Assess new lead potential,2026-01-27,2026-01-27T11:30:00.000Z,11:30,2026-01-27T12:00:00.000Z,12:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,4,Documentation,Analyze competitor offerings,2026-01-27,2026-01-27T12:00:00.000Z,12:00,2026-01-27T13:00:00.000Z,13:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,10,,Assess new lead potential,2026-01-27,2026-01-27T14:00:00.000Z,14:00,2026-01-27T14:15:00.000Z,14:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,9,Training,Demonstrate product to lead,2026-01-27,2026-01-27T14:15:00.000Z,14:15,2026-01-27T14:45:00.000Z,14:45,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-27,2026-01-27T14:45:00.000Z,14:45,2026-01-27T16:00:00.000Z,16:00,1.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,5,IT / Systems & Server Maintenance,Update CRM records,2026-01-27,2026-01-27T16:00:00.000Z,16:00,2026-01-27T16:30:00.000Z,16:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,9,Training,Demonstrate product to lead,2026-01-27,2026-01-27T16:30:00.000Z,16:30,2026-01-27T17:00:00.000Z,17:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,4,Documentation,Analyze competitor offerings,2026-01-27,2026-01-27T17:00:00.000Z,17:00,2026-01-27T18:00:00.000Z,18:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-28,2026-01-28T09:00:00.000Z,9:00,2026-01-28T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,3,Development,One-on-one coaching session,2026-01-28,2026-01-28T09:30:00.000Z,9:30,2026-01-28T10:45:00.000Z,10:45,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,5,Meeting,Update CRM records,2026-01-28,2026-01-28T10:45:00.000Z,10:45,2026-01-28T11:05:00.000Z,11:05,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,9,Team Evaluation & Performance Reviews,Demonstrate product to lead,2026-01-28,2026-01-28T11:05:00.000Z,11:05,2026-01-28T12:05:00.000Z,12:05,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,2,Design,Review of sales agreement,2026-01-28,2026-01-28T12:05:00.000Z,12:05,2026-01-28T13:00:00.000Z,13:00,0.9
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,7,Research,Team sync on sales pipeline,2026-01-28,2026-01-28T14:00:00.000Z,14:00,2026-01-28T15:15:00.000Z,15:15,1.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,5,Meeting,Update CRM records,2026-01-28,2026-01-28T15:15:00.000Z,15:15,2026-01-28T16:30:00.000Z,16:30,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,5,Meeting,Update CRM records,2026-01-28,2026-01-28T16:30:00.000Z,16:30,2026-01-28T16:45:00.000Z,16:45,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,7,Research,Assist with client onboarding,2026-01-28,2026-01-28T16:45:00.000Z,16:45,2026-01-28T17:30:00.000Z,17:30,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-28,2026-01-28T17:30:00.000Z,17:30,2026-01-28T18:00:00.000Z,18:00,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-29,2026-01-29T09:00:00.000Z,9:00,2026-01-29T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD10,Circle of Light,10,,Assess new lead potential,2026-01-29,2026-01-29T09:30:00.000Z,9:30,2026-01-29T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-29,2026-01-29T10:15:00.000Z,10:15,2026-01-29T10:35:00.000Z,10:35,0.3
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,3,Representation / External Relations,One-on-one coaching session,2026-01-29,2026-01-29T10:35:00.000Z,10:35,2026-01-29T11:50:00.000Z,11:50,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,5,Meeting,Update CRM records,2026-01-29,2026-01-29T11:50:00.000Z,11:50,2026-01-29T12:35:00.000Z,12:35,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-29,2026-01-29T12:35:00.000Z,12:35,2026-01-29T13:00:00.000Z,13:00,0.4
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-29,2026-01-29T14:00:00.000Z,14:00,2026-01-29T14:30:00.000Z,14:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-29,2026-01-29T14:30:00.000Z,14:30,2026-01-29T15:15:00.000Z,15:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,7,Research,Team sync on sales pipeline,2026-01-29,2026-01-29T15:15:00.000Z,15:15,2026-01-29T15:30:00.000Z,15:30,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD6,EduBloom,7,Research,Team sync on sales pipeline,2026-01-29,2026-01-29T15:30:00.000Z,15:30,2026-01-29T16:15:00.000Z,16:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Follow-up with key client,2026-01-29,2026-01-29T16:15:00.000Z,16:15,2026-01-29T17:00:00.000Z,17:00,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD3,EchoWild,3,Development,One-on-one coaching session,2026-01-29,2026-01-29T17:00:00.000Z,17:00,2026-01-29T17:20:00.000Z,17:20,0.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,4,Documentation,Analyze competitor offerings,2026-01-29,2026-01-29T17:20:00.000Z,17:20,2026-01-29T17:50:00.000Z,17:50,0.5
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD9,Urban Seed,3,Development,One-on-one coaching session,2026-01-29,2026-01-29T17:50:00.000Z,17:50,2026-01-29T18:00:00.000Z,18:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,1,General Meetings,Daily coordination meeting,2026-01-30,2026-01-30T09:00:00.000Z,9:00,2026-01-30T09:30:00.000Z,9:30,0.5
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,2,Accounting TDC & FTB,Review of sales agreement,2026-01-30,2026-01-30T09:30:00.000Z,9:30,2026-01-30T10:15:00.000Z,10:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD5,Peace Bridges,7,Research,Team sync on sales pipeline,2026-01-30,2026-01-30T10:15:00.000Z,10:15,2026-01-30T10:30:00.000Z,10:30,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,7,Pay Days Off,Team sync on sales pipeline,2026-01-30,2026-01-30T10:30:00.000Z,10:30,2026-01-30T11:45:00.000Z,11:45,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD4,Common Roots,2,Design,Review of sales agreement,2026-01-30,2026-01-30T11:45:00.000Z,11:45,2026-01-30T12:00:00.000Z,12:00,0.2
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,10,,Assess new lead potential,2026-01-30,2026-01-30T12:00:00.000Z,12:00,2026-01-30T13:00:00.000Z,13:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD2,Wingf og Children,3,Development,One-on-one coaching session,2026-01-30,2026-01-30T14:00:00.000Z,14:00,2026-01-30T15:00:00.000Z,15:00,1.0
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD1,Vital Link,8,Support,Draft new client proposal,2026-01-30,2026-01-30T15:00:00.000Z,15:00,2026-01-30T15:15:00.000Z,15:15,0.2
+2,Rafael Villegas,Rafael,Sample123.,2,Administrativo,,,8,Contracts & Legal,Draft new client proposal,2026-01-30,2026-01-30T15:15:00.000Z,15:15,2026-01-30T16:30:00.000Z,16:30,1.3
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD7,FreePaw Collective,8,Support,Draft new client proposal,2026-01-30,2026-01-30T16:30:00.000Z,16:30,2026-01-30T17:15:00.000Z,17:15,0.8
+2,Rafael Villegas,Rafael,Sample123.,1,Project,COD8,Human Horizons,4,Documentation,Analyze competitor offerings,2026-01-30,2026-01-30T17:15:00.000Z,17:15,2026-01-30T18:00:00.000Z,18:00,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-02,2026-01-02T09:30:00.000Z,,2026-01-02T10:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-02,2026-01-02T10:00:00.000Z,,2026-01-02T11:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-02,2026-01-02T11:00:00.000Z,,2026-01-02T11:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-02,2026-01-02T11:45:00.000Z,,2026-01-02T12:45:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-02,2026-01-02T12:45:00.000Z,,2026-01-02T13:00:00.000Z,,0.2
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-05,2026-01-05T09:00:00.000Z,,2026-01-05T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-05,2026-01-05T09:45:00.000Z,,2026-01-05T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-05,2026-01-05T10:30:00.000Z,,2026-01-05T11:00:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-05,2026-01-05T11:00:00.000Z,,2026-01-05T12:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-05,2026-01-05T12:00:00.000Z,,2026-01-05T12:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-05,2026-01-05T12:45:00.000Z,,2026-01-05T13:00:00.000Z,,0.2
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-06,2026-01-06T09:00:00.000Z,,2026-01-06T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-06,2026-01-06T09:45:00.000Z,,2026-01-06T10:45:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Screened candidate profiles and documented evaluation notes,2026-01-06,2026-01-06T10:45:00.000Z,,2026-01-06T11:30:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-06,2026-01-06T11:30:00.000Z,,2026-01-06T12:15:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-06,2026-01-06T12:15:00.000Z,,2026-01-06T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-07,2026-01-07T09:00:00.000Z,,2026-01-07T10:00:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-07,2026-01-07T10:00:00.000Z,,2026-01-07T11:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Screened candidate profiles and documented evaluation notes,2026-01-07,2026-01-07T11:00:00.000Z,,2026-01-07T12:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Screened candidate profiles and documented evaluation notes,2026-01-07,2026-01-07T12:00:00.000Z,,2026-01-07T13:00:00.000Z,,1.0
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-08,2026-01-08T09:00:00.000Z,,2026-01-08T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-08,2026-01-08T09:45:00.000Z,,2026-01-08T10:45:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-08,2026-01-08T10:45:00.000Z,,2026-01-08T11:30:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-08,2026-01-08T11:30:00.000Z,,2026-01-08T12:30:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-08,2026-01-08T12:30:00.000Z,,2026-01-08T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-09,2026-01-09T09:00:00.000Z,,2026-01-09T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-09,2026-01-09T09:45:00.000Z,,2026-01-09T10:45:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-09,2026-01-09T10:45:00.000Z,,2026-01-09T11:30:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-09,2026-01-09T11:30:00.000Z,,2026-01-09T12:15:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-09,2026-01-09T12:15:00.000Z,,2026-01-09T12:45:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-09,2026-01-09T12:45:00.000Z,,2026-01-09T13:00:00.000Z,,0.2
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-12,2026-01-12T09:00:00.000Z,,2026-01-12T10:00:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-12,2026-01-12T10:00:00.000Z,,2026-01-12T10:45:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-12,2026-01-12T10:45:00.000Z,,2026-01-12T11:15:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-12,2026-01-12T11:15:00.000Z,,2026-01-12T11:45:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-12,2026-01-12T11:45:00.000Z,,2026-01-12T12:15:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-12,2026-01-12T12:15:00.000Z,,2026-01-12T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-13,2026-01-13T09:00:00.000Z,,2026-01-13T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-13,2026-01-13T09:45:00.000Z,,2026-01-13T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-13,2026-01-13T10:30:00.000Z,,2026-01-13T11:00:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-13,2026-01-13T11:00:00.000Z,,2026-01-13T11:45:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-13,2026-01-13T11:45:00.000Z,,2026-01-13T12:30:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-13,2026-01-13T12:30:00.000Z,,2026-01-13T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-14,2026-01-14T09:00:00.000Z,,2026-01-14T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-14,2026-01-14T09:45:00.000Z,,2026-01-14T10:15:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-14,2026-01-14T10:15:00.000Z,,2026-01-14T11:00:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-14,2026-01-14T11:00:00.000Z,,2026-01-14T11:30:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-14,2026-01-14T11:30:00.000Z,,2026-01-14T12:15:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-14,2026-01-14T12:15:00.000Z,,2026-01-14T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-15,2026-01-15T09:00:00.000Z,,2026-01-15T09:30:00.000Z,,0.5
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-15,2026-01-15T09:30:00.000Z,,2026-01-15T10:00:00.000Z,,0.5
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-15,2026-01-15T10:00:00.000Z,,2026-01-15T10:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-15,2026-01-15T10:45:00.000Z,,2026-01-15T11:30:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-15,2026-01-15T11:30:00.000Z,,2026-01-15T12:30:00.000Z,,1.0
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-15,2026-01-15T12:30:00.000Z,,2026-01-15T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-16,2026-01-16T09:00:00.000Z,,2026-01-16T10:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-16,2026-01-16T10:00:00.000Z,,2026-01-16T10:30:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-16,2026-01-16T10:30:00.000Z,,2026-01-16T11:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-16,2026-01-16T11:00:00.000Z,,2026-01-16T11:45:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-16,2026-01-16T11:45:00.000Z,,2026-01-16T12:30:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-16,2026-01-16T12:30:00.000Z,,2026-01-16T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-19,2026-01-19T09:00:00.000Z,,2026-01-19T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-19,2026-01-19T09:45:00.000Z,,2026-01-19T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-19,2026-01-19T10:30:00.000Z,,2026-01-19T11:15:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-19,2026-01-19T11:15:00.000Z,,2026-01-19T12:15:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-19,2026-01-19T12:15:00.000Z,,2026-01-19T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-20,2026-01-20T09:00:00.000Z,,2026-01-20T10:00:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-20,2026-01-20T10:00:00.000Z,,2026-01-20T10:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-20,2026-01-20T10:45:00.000Z,,2026-01-20T11:15:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-20,2026-01-20T11:15:00.000Z,,2026-01-20T12:15:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-20,2026-01-20T12:15:00.000Z,,2026-01-20T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-21,2026-01-21T09:00:00.000Z,,2026-01-21T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-21,2026-01-21T09:45:00.000Z,,2026-01-21T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-21,2026-01-21T10:30:00.000Z,,2026-01-21T11:30:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Screened candidate profiles and documented evaluation notes,2026-01-21,2026-01-21T11:30:00.000Z,,2026-01-21T12:30:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-21,2026-01-21T12:30:00.000Z,,2026-01-21T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-22,2026-01-22T09:00:00.000Z,,2026-01-22T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-22,2026-01-22T09:45:00.000Z,,2026-01-22T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-22,2026-01-22T10:30:00.000Z,,2026-01-22T11:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-22,2026-01-22T11:00:00.000Z,,2026-01-22T11:45:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-22,2026-01-22T11:45:00.000Z,,2026-01-22T12:30:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-22,2026-01-22T12:30:00.000Z,,2026-01-22T13:00:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-23,2026-01-23T09:00:00.000Z,,2026-01-23T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-23,2026-01-23T09:45:00.000Z,,2026-01-23T10:45:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-23,2026-01-23T10:45:00.000Z,,2026-01-23T11:15:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Prepared internal HR report tracking hiring and retention activities,2026-01-23,2026-01-23T11:15:00.000Z,,2026-01-23T12:00:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-23,2026-01-23T12:00:00.000Z,,2026-01-23T13:00:00.000Z,,1.0
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-26,2026-01-26T09:00:00.000Z,,2026-01-26T09:30:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-26,2026-01-26T09:30:00.000Z,,2026-01-26T10:30:00.000Z,,1.0
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-26,2026-01-26T10:30:00.000Z,,2026-01-26T11:00:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-26,2026-01-26T11:00:00.000Z,,2026-01-26T11:30:00.000Z,,0.5
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Screened candidate profiles and documented evaluation notes,2026-01-26,2026-01-26T11:30:00.000Z,,2026-01-26T12:00:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-26,2026-01-26T12:00:00.000Z,,2026-01-26T13:00:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-27,2026-01-27T09:00:00.000Z,,2026-01-27T10:00:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-27,2026-01-27T10:00:00.000Z,,2026-01-27T10:30:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-27,2026-01-27T10:30:00.000Z,,2026-01-27T11:15:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-27,2026-01-27T11:15:00.000Z,,2026-01-27T12:15:00.000Z,,1.0
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-27,2026-01-27T12:15:00.000Z,,2026-01-27T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-28,2026-01-28T09:00:00.000Z,,2026-01-28T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-28,2026-01-28T09:45:00.000Z,,2026-01-28T10:15:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-28,2026-01-28T10:15:00.000Z,,2026-01-28T10:45:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-28,2026-01-28T10:45:00.000Z,,2026-01-28T11:15:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Participated in HR coordination meeting to align priorities and pending actions,2026-01-28,2026-01-28T11:15:00.000Z,,2026-01-28T12:15:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-28,2026-01-28T12:15:00.000Z,,2026-01-28T12:45:00.000Z,,0.5
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-28,2026-01-28T12:45:00.000Z,,2026-01-28T13:00:00.000Z,,0.2
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-29,2026-01-29T09:00:00.000Z,,2026-01-29T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-29,2026-01-29T09:45:00.000Z,,2026-01-29T10:15:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-29,2026-01-29T10:15:00.000Z,,2026-01-29T11:15:00.000Z,,1.0
+,,,,2,Administrative,,,1,General Meetings,Reviewed weekly HR agenda and upcoming organizational needs with leadership,2026-01-29,2026-01-29T11:15:00.000Z,,2026-01-29T11:45:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-29,2026-01-29T11:45:00.000Z,,2026-01-29T12:15:00.000Z,,0.5
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-29,2026-01-29T12:15:00.000Z,,2026-01-29T13:00:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Prepared onboarding checklist and coordinated documentation for new hires,2026-01-30,2026-01-30T09:00:00.000Z,,2026-01-30T09:45:00.000Z,,0.8
+,,,,2,Administrative,,,10,"Recruitment, onboarding, and other HR administration.",Followed up on interview feedback and updated recruitment status,2026-01-30,2026-01-30T09:45:00.000Z,,2026-01-30T10:30:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-30,2026-01-30T10:30:00.000Z,,2026-01-30T11:15:00.000Z,,0.8
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Compiled performance feedback received from team leads,2026-01-30,2026-01-30T11:15:00.000Z,,2026-01-30T11:45:00.000Z,,0.5
+,,,,2,Administrative,,,11,Other Administrative Tasks,Updated HR records and ensured documentation completeness,2026-01-30,2026-01-30T11:45:00.000Z,,2026-01-30T12:15:00.000Z,,0.5
+,,,,2,Administrative,,,9,Team Evaluation & Performance Reviews,Reviewed evaluation inputs and prepared summary for follow-up discussions,2026-01-30,2026-01-30T12:15:00.000Z,,2026-01-30T13:00:00.000Z,,0.8
