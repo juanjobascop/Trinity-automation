@@ -1,6 +1,8 @@
 
-
 import neatCSV from 'neat-csv';
+import 'cypress-file-upload';
+import 'cypress-real-events';
+
 describe('Create My Timecard - Multi-Contractor Bulk Event Creation', () => {
 
   // Helper: Get Monday of the week
@@ -66,9 +68,16 @@ describe('Create My Timecard - Multi-Contractor Bulk Event Creation', () => {
   // Helper: Process a single timecard entry
   const processEntry = (entry) => {
     const targetDate = entry.date;
-    const startTime = entry.startTime + ':00';
+    // Fix: Ensure startTime is strictly HH:mm:00 (zero-padded) for data-time matching
+    const [sH, sM] = entry.startTime.split(':');
+    const startTime = `${sH.padStart(2, '0')}:${sM.padStart(2, '0')}:00`;
+
+    // Calculate drag end time (assumes logic correctness from provided script)
     const dragEndTime = subtractMinutes(entry.endTime, 15) + ':00';
     const durationStr = calculateDuration(entry.startTime, entry.endTime);
+
+    // Calculate scroll target time (1 hour before start time)
+    const scrollTime = subtractMinutes(entry.startTime, 60) + ':00';
 
     // ============================================================
     // 1. NAVIGATION
@@ -89,145 +98,133 @@ describe('Create My Timecard - Multi-Contractor Bulk Event Creation', () => {
       }
     });
 
-    // Verify target date column exists and get it
+    // Verify target date column exists
     cy.get(`.fc-timegrid-col[data-date="${targetDate}"]`, { timeout: 10000 }).should('exist');
 
-    // ============================================================
-    // 2. DRAG INTERACTION (Coordinate-Based Synthetic Events)
-    // ============================================================
-    cy.get(`.fc-timegrid-col[data-date="${targetDate}"]`).then($col => {
-
-      // Scroll the start time slot into view
-      cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`)
-        .scrollIntoView({ block: 'center' })
-        .should('be.visible');
-
-      cy.wait(500); // Allow scroll to settle
-
-      // Get start and end time slots
-      cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`).then($startSlot => {
-        cy.get(`td.fc-timegrid-slot-lane[data-time="${dragEndTime}"]`).then($endSlot => {
-
-          // Recalculate column coordinates AFTER scroll to ensure accuracy
-          const colRect = $col[0].getBoundingClientRect();
-          const colX = colRect.left + (colRect.width / 2);
-
-          const startRect = $startSlot[0].getBoundingClientRect();
-          const startY = startRect.top + (startRect.height / 2);
-
-          const endRect = $endSlot[0].getBoundingClientRect();
-          const endY = endRect.top + (endRect.height / 2);
-
-          // Calculate relative coordinates for the trigger on the COLUMN element
-          // X is center of column relative to column left (width/2)
-          const relativeX = colRect.width / 2;
-          // Y is relative to the column top
-          const relativeStartY = startY - colRect.top;
-          const relativeEndY = endY - colRect.top;
-
-          cy.log(`COORD DRAG: RelX=${relativeX}, RelStartY=${relativeStartY}, RelEndY=${relativeEndY}`);
-
-          // Trigger interaction on the COLUMN element
-          cy.wrap($col)
-            .trigger('mousedown', {
-              button: 0,
-              buttons: 1,
-              which: 1,
-              force: true,
-              view: window,
-              x: relativeX,
-              y: relativeStartY
-            })
-            .wait(300)
-            .trigger('mousemove', {
-              button: 0,
-              buttons: 1,
-              which: 1,
-              force: true,
-              view: window,
-              x: relativeX,
-              y: relativeEndY
-            })
-            .wait(300)
-            .trigger('mouseup', {
-              button: 0,
-              buttons: 0,
-              which: 1,
-              force: true,
-              view: window,
-              x: relativeX,
-              y: relativeEndY
-            });
-        });
-      });
-    });
-
-    cy.wait(1500);
+    // Reset mouse position and focus to prevent interference from previous events
+    cy.get('body').realMouseMove(0, 0).click({ force: true });
+    cy.wait(500);
 
     // ============================================================
-    // 3. FILL MODAL
+    // 2. DRAG INTERACTION (Using cypress-real-events)
     // ============================================================
-    cy.get('.p-dialog', { timeout: 20000 }).should('exist').should('be.visible');
+    // Scroll a time slot 1 hour BEFORE the actual start time into view to avoid header obstruction
+    cy.get(`td.fc-timegrid-slot-lane[data-time="${scrollTime}"]`)
+      .scrollIntoView({ block: 'center' })
+      .should('be.visible');
 
-    cy.get('.p-dialog').within(() => {
-      cy.contains('Add Work Hours').should('be.visible');
+    cy.wait(500); // Allow scroll to settle
 
-      const dateObj = new Date(entry.date + 'T12:00:00');
-      const expectedDay = dateObj.getDate();
-      const expectedYear = dateObj.getFullYear();
+    // Get the intersection cell using INDEX matching (Header -> Body Column)
+    cy.log(`TARGET DATE FOR DRAG: ${targetDate}`);
 
-      cy.get('.p-dialog-content').invoke('text').then((text) => {
-        if (!text.includes(expectedYear)) {
-          cy.get('.p-dialog-header').invoke('text').then(headerText => {
-            cy.log(`MODAL HEADER: ${headerText}`);
-            expect(headerText).to.contain(expectedDay);
-            expect(headerText).to.contain(expectedYear);
-          });
-        } else {
-          cy.log(`MODAL CONTENT: ${text}`);
-          expect(text).to.contain(expectedDay);
-          expect(text).to.contain(expectedYear);
+    // Find the header index for the target date
+    cy.get(`th[role="columnheader"].fc-col-header-cell`).then($headers => {
+      // Find index of header with matching data-date
+      let targetIndex = -1;
+      $headers.each((i, el) => {
+        if (Cypress.$(el).attr('data-date') === targetDate) {
+          targetIndex = i;
+          return false; // break
         }
       });
 
-      cy.wait(2000); // Wait for modal content (radio buttons, dropdowns) to load
+      if (targetIndex === -1) {
+        throw new Error(`Could not find column header for date ${targetDate}`);
+      }
 
-      cy.contains(entry.startTime).should('exist');
-      cy.contains(durationStr).should('exist');
+      // Now get the corresponding body column by index
+      cy.get(`.fc-timegrid-col:not(.fc-timegrid-axis)`).eq(targetIndex).then($col => {
+        const colRect = $col[0].getBoundingClientRect();
+        const colX = colRect.left + 20;
+        cy.log(`COLUMN FOUND (b Index ${targetIndex}): data-date=${$col.attr('data-date')}, colX=${colX}`);
 
-      cy.contains('label', entry.workType).should('be.visible').click();
-      cy.wait(1000); // Wait for projects to load after selecting Work Type
+        // Get start and end time slots
+        cy.get(`td.fc-timegrid-slot-lane[data-time="${startTime}"]`).then($startSlot => {
+          cy.get(`td.fc-timegrid-slot-lane[data-time="${dragEndTime}"]`).then($endSlot => {
+            const startRect = $startSlot[0].getBoundingClientRect();
+            const endRect = $endSlot[0].getBoundingClientRect();
+
+            const startY = startRect.top + (startRect.height / 2);
+            const endY = endRect.top + (endRect.height / 2);
+
+            cy.log(`REAL EVENTS DRAG: X=${colX}, StartY=${startY}, EndY=${endY}`);
+
+            cy.get('body')
+              .realMouseDown({ x: colX, y: startY, button: 'left' })
+              .realMouseMove(colX, endY, { position: 'topLeft' })
+              .realMouseUp({ x: colX, y: endY, button: 'left' });
+          });
+        });
+      });
+
+      cy.wait(1500);
+
+      // ============================================================
+      // 3. FILL MODAL
+      // ============================================================
+      cy.get('.p-dialog', { timeout: 20000 }).should('exist').should('be.visible');
+
+      cy.get('.p-dialog').within(() => {
+        cy.contains('Add Work Hours').should('be.visible');
+
+        const dateObj = new Date(entry.date + 'T12:00:00');
+        const expectedDay = dateObj.getDate();
+        const expectedYear = dateObj.getFullYear();
+
+        cy.get('.p-dialog-content').invoke('text').then((text) => {
+          if (!text.includes(expectedYear)) {
+            cy.get('.p-dialog-header').invoke('text').then(headerText => {
+              cy.log(`MODAL HEADER: ${headerText}`);
+              expect(headerText).to.contain(expectedDay);
+              expect(headerText).to.contain(expectedYear);
+            });
+          } else {
+            cy.log(`MODAL CONTENT: ${text}`);
+            expect(text).to.contain(expectedDay);
+            expect(text).to.contain(expectedYear);
+          }
+        });
+
+        cy.wait(2000); // Wait for modal content (radio buttons, dropdowns) to load
+
+        cy.contains(entry.startTime).should('exist');
+        cy.contains(durationStr).should('exist');
+
+        cy.contains('label', entry.workType).should('be.visible').click();
+        cy.wait(2000);
+
+        if (entry.workType === 'Project' && entry.project) {
+          cy.get('#projectId').should('be.visible').click();
+        }
+      });
 
       if (entry.workType === 'Project' && entry.project) {
-        cy.get('#projectId').should('be.visible').click();
+        cy.get('ul[role="listbox"], .p-dropdown-items-wrapper, #projectId_list')
+          .should('be.visible')
+          .contains('li', entry.project)
+          .click();
+
+        // Robustly close the dropdown overlay
+        cy.get('body').type('{esc}');
+        cy.get('.p-select-overlay, .p-dropdown-panel, ul[role="listbox"]').should('not.exist');
+        cy.wait(500);
       }
+
+      cy.get('.p-dialog').within(() => {
+        // Click on modal title as a fallback to ensure dropdown/popups are closed
+        cy.get('.p-dialog-title').click({ force: true });
+        cy.wait(500);
+
+        // Task Type
+        cy.contains('label', entry.taskType).scrollIntoView().should('be.visible').click();
+        cy.get('#description').clear().type(entry.description);
+      });
+
+      cy.contains('button', 'Save Hours').scrollIntoView().should('be.visible').click();
+      cy.get('.p-dialog', { timeout: 20000 }).should('not.exist');
+      cy.wait(2000); // Longer settle time
     });
-
-    if (entry.workType === 'Project' && entry.project) {
-      cy.get('ul[role="listbox"], .p-dropdown-items-wrapper, #projectId_list')
-        .should('be.visible')
-        .contains('li', entry.project)
-        .click();
-
-      // Ensure dropdown is closed before proceeding
-      cy.get('ul[role="listbox"], .p-dropdown-items-wrapper, #projectId_list').should('not.exist');
-      cy.get('body').click(0, 0);
-    }
-
-    cy.get('.p-dialog').within(() => {
-      // Click on modal title to ensure dropdown/popups are closed
-      cy.get('.p-dialog-title').click({ force: true });
-      cy.wait(500);
-
-      // Task Type
-      cy.contains('label', entry.taskType).scrollIntoView().should('be.visible').click();
-      cy.get('#description').clear().type(entry.description);
-    });
-
-    cy.contains('button', 'Save Hours').scrollIntoView().should('be.visible').click();
-    cy.get('.p-dialog', { timeout: 20000 }).should('not.exist');
-    cy.wait(2000); // Longer settle time for calendar to re-render
-
   };
 
   // Helper: Process all entries for a contractor
@@ -287,11 +284,10 @@ describe('Create My Timecard - Multi-Contractor Bulk Event Creation', () => {
     cy.viewport(1920, 1080);
 
     // Read CSV file using standard Cypress fixture and neat-csv
-    cy.fixture('csv/timecards_entries.csv')
+    cy.fixture('timecard_entries.csv')
       .then(neatCSV)
       .then((flatData) => {
         const contractors = transformToContractors(flatData);
-
 
         // Process each contractor sequentially
         cy.wrap(contractors).each((contractor, contractorIndex) => {
