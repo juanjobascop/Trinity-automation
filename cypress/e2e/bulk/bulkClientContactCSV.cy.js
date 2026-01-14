@@ -2,7 +2,8 @@ import neatCSV from 'neat-csv';
 
 describe('Bulk Create Client Contacts from CSV', () => {
   beforeEach(() => {
-    // 1. Load CSV and alias it as 'contactsData' 
+    // 1. Load CSV and alias it as 'contactsData'
+    // This ensures data is ready before the test starts
     cy.fixture('csv/clientContact.csv')
       .then(neatCSV)
       .then((data) => {
@@ -23,6 +24,11 @@ describe('Bulk Create Client Contacts from CSV', () => {
       // Navigation to main Clients list
       cy.contains('Clients', { timeout: 10000 }).should('be.visible').click();
       cy.wait(2000);
+
+      // Search for the client to handle pagination
+      cy.get('input[placeholder*="Search"]').first().clear().type(contact.clientName);
+      cy.contains('button', 'search').click();
+      cy.wait(1000); // Wait for filter
 
       // Select the client using the 'clientName' header
       cy.contains(contact.clientName, { timeout: 10000 }).click();
@@ -49,6 +55,7 @@ describe('Bulk Create Client Contacts from CSV', () => {
       // Language selection using 'preferredLanguage'
       cy.get('.p-icon.p-select-dropdown-icon').click();
       cy.get('.p-select-overlay').contains('li', contact.preferredLanguage).click();
+      cy.get('body').click(0, 0); // Close overlay to prevent covering next element
 
       // Contact Details using the new headers
       cy.get('#workEmail').clear().type(contact.workEmail);
