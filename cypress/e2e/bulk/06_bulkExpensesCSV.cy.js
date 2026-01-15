@@ -47,24 +47,49 @@ describe('Bulk Create Expenses from CSV', () => {
 
       // --- FORM FIELDS ---
 
+      // Helper for robust dropdown selection
+      const selectDropdown = (selector, targetValue) => {
+        cy.get(selector).should('be.visible').click({ force: true });
+
+        cy.get('.p-select-panel, .p-select-overlay', { timeout: 15000 }).should('be.visible').then(($overlay) => {
+          const filter = $overlay.find('input.p-select-filter, input[role="searchbox"]');
+
+          if (filter.length > 0) {
+            // Filterable dropdown
+            cy.wrap(filter).clear().type(targetValue);
+            cy.wait(500); // Optimized wait
+
+            // Try to click exact match first, else visible option
+            cy.wrap($overlay).find('li').filter(':visible').contains(targetValue).click({ force: true });
+          } else {
+            // Non-filterable dropdown
+            cy.wrap($overlay).find('li').contains(targetValue).scrollIntoView().should('be.visible').click();
+          }
+        });
+
+        // Check if overlay is still there
+        cy.get('body').then(($body) => {
+          if ($body.find('.p-select-overlay, .p-select-panel').filter(':visible').length > 0) {
+            // Try pressing ESC to close it
+            cy.get('body').type('{esc}');
+          }
+        });
+
+        cy.get('.p-select-overlay, .p-select-panel').should('not.exist');
+        cy.get(selector).should('contain', targetValue);
+      };
+
       // Project
-      cy.get('#projectCt').click();
-      cy.get("input[role='searchbox']").should('be.visible').type(expense.project.substring(0, 4));
-      cy.get('.p-select-option').contains(expense.project).click();
+      selectDropdown('#projectCt', expense.project);
 
       // Category
-      cy.get('#categoryCt').click();
-      cy.get("input[role='searchbox']").should('be.visible').type("Other"); // Assuming 'Other' is strictly what we want or based on CSV? 
-      // User CSV has "Other Expenses"
-      cy.get('.p-select-option').contains(expense.category).click();
+      selectDropdown('#categoryCt', expense.category);
 
       // Description
       cy.get('#description').type(expense.description);
 
       // Currency
-      cy.get('#currencyCt').click();
-      cy.get("input[role='searchbox']").should('be.visible').type(expense.currency);
-      cy.get('.p-select-option').contains(expense.currency).click();
+      selectDropdown('#currencyCt', expense.currency);
 
       // Amount
       cy.get('#amount').type(expense.amount);
@@ -84,7 +109,7 @@ describe('Bulk Create Expenses from CSV', () => {
       // Verify and reset for next loop (Log out? or just next Login will handle it?)
       // cy.login() custom command often starts by visiting the login page, which handles the reset.
       // We wait a bit to ensure the modal closes and success message might appear
-      cy.wait(2000);
+
     });
   });
 });

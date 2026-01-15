@@ -1,14 +1,14 @@
 searchName,contractorName,contractumber,CONTRACT,TYPE,currency,rate,timezoneSearch,timezoneSelect,areaSearch,areaSelect,position,startDate,finishDate
 Rafael,Villegas,1er,File,HOURLY,USD,5,UTC±00:00 (GMT/London),UTC±00:00 (GMT/London),Sales Management,Sales Management,Sales Manager,01/11/2024,28/11/2025
-Bernard,Callaghan,1er,File,HOURLY,MXN,"71,85",UTC−07:00 (Mexico),UTC−07:00 (Mexico),development,development,Developer Junior,01/11/2024,28/11/2025
+Bernard,Callaghan,1er,File,HOURLY,MXN,"71,85",UTC−07:00 (Mexico),UTC−07:00 (Mexico),Development,Development,Developer Junior,01/11/2024,28/11/2025
 Adrian,Piejko,1er,File,HOURLY,USD,8,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Project Management,Project Management,Project Manager Junior,02/09/2024,30/9/2025
 Karin,Medina,1er,File,HOURLY,ARS,"5842,04",UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Admin,Admin,Human Resources,01/08/2024,29/8/2025
-Lya,Huerta,1er,File,HOURLY,USD,8,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),development,development,Developer Junior,01/01/2025,30/1/2026
-Jessica,Calizaya,1er,File,HOURLY,USD,11,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),development,development,Developer Senior,01/05/2025,29/5/2026
+Lya,Huerta,1er,File,HOURLY,USD,8,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Development,Development,Developer Junior,01/01/2025,30/1/2026
+Jessica,Calizaya,1er,File,HOURLY,USD,11,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Development,Development,Developer Senior,01/05/2025,29/5/2026
 Guillermo,Paredes,1er,File,HOURLY,MXN,"41,57",UTC−07:00 (Mexico),UTC−07:00 (Mexico),Internship,Internship,Intern,01/08/2024,29/8/2025
 Omar,Corrales,1er,File,HOURLY,USD,4,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Design,Design,Designer UX/UI Junior,01/03/2024,31/3/2025
 Abel,Gallo,1er,File,HOURLY,USD,10,UTC±00:00 (GMT/London),UTC±00:00 (GMT/London),Design,Design,Designer Lead,01/05/2025,29/5/2026
-Luciano,Vargas,1er,File,HOURLY,USD,5,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),development,development,Developer Junior,02/12/2024,31/12/2025
+Luciano,Vargas,1er,File,HOURLY,USD,5,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Development,Development,Developer Junior,02/12/2024,31/12/2025
 Sara,Acha,1er,File,HOURLY,USD,6,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Sales Management,Sales Management,Community Management,01/07/2024,31/7/2025
 Adrianz,Zelada,1er,File,HOURLY,USD,6,UTC±00:00 (GMT/London),UTC±00:00 (GMT/London),Development,Development,Developer Senior,01/05/2025,29/5/2026
 Franz,Yapu,1er,File,HOURLY,USD,6,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Design,Design,Designer Lead,02/09/2024,30/9/2025
@@ -27,24 +27,24 @@ Hans,Robles,1er,File,HOURLY,MXN,"269,44",UTC−07:00 (Mexico),UTC−07:00 (Mexic
 Esteban,Chiri,1er,File,MONTHLY,USD,1500,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Development,Development,Developer Senior,05/08/2024,29/8/2025
 Jorge,Villagomez,1er,File,MONTHLY,USD,1500,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Design,Design,Designer Lead,05/05/2025,29/5/2026
 Paola,Lechuga,1er,File,MONTHLY,USD,1400,UTC±00:00 (GMT/London),UTC±00:00 (GMT/London),Quality Assurance,Quality Assurance,QA Lead,01/04/2025,30/4/2026
-Diego,Babtista,1er,File,MONTHLY,ARS,1400605.13,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Sales Management,Sales Management,WordPress Developer,04/11/2024,28/11/2025
-Denis,Concordel,2do,File,HOURLY,USD,9,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),development,development,Developer Lead,1/10/2025,30/10/2026
+Diego,Babtista,1er,File,MONTHLY,ARS,1400605.13,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Sales Management,Sales Management,WordPress Development,04/11/2024,28/11/2025
+Denis,Concordel,2do,File,HOURLY,USD,9,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Development,Development,Developer Lead,1/10/2025,30/10/2026
 Rafael,Villegas,2do,File,HOURLY,USD,6,UTC±00:00 (GMT/London),UTC±00:00 (GMT/London),Sales Management,Sales Management,Sales Manager,1/12/2025,31/12/2026
-Bernard,Callaghan,2do,File,HOURLY,USD,"4,4",UTC−07:00 (Mexico),UTC−07:00 (Mexico),development,development,Developer Junior,1/12/2025,31/12/2026
-Adrian,Piejko,2do,File,HOURLY,USD,9,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Project Management,Project Management,Project Manager Junior,1/9/2025,30/9/2026
-Karin,Medina,2do,File,HOURLY,USD,"4,5",UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Admin,Admin,Human Resources,4/8/2025,28/8/2026
-Gullermo,Paredes,2do,File,HOURLY,USD,4,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Internship,Internship,Intern,1/9/2025,30/9/2026
+Bernard,Callaghan,2do,File,HOURLY,USD,"4,4",UTC−07:00 (Mexico),UTC−07:00 (Mexico),Development,Development,Developer Junior,1/12/2025,31/12/2026
+Adrian,Piejko,2do,File,HOURLY,USD,9,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Project Management,Project Management,Project Manager Junior,1/10/2025,30/10/2026
+Karin,Medina,2do,File,HOURLY,USD,"4,5",UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Admin,Admin,Human Resources,4/9/2025,28/9/2026
+Guillermo,Paredes,2do,File,HOURLY,USD,4,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Internship,Internship,Intern,1/9/2025,30/9/2026
 Omar,Corrales,2do,File,HOURLY,USD,4,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Design,Design,Designer UX/UI Junior,1/4/2025,30/4/2026
-Luciano,Vargas,2do,File,HOURLY,USD,7,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),development,development,Developer Junior,2/1/2026,29/1/2027
+Luciano,Vargas,2do,File,HOURLY,USD,7,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Development,Development,Developer Junior,2/1/2026,29/1/2027
 Sara,Acha,2do,File,HOURLY,USD,6,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Sales Management,Sales Management,Community Management,1/8/2025,28/8/2026
-Franz,Yapu,2do,File,HOURLY,USD,7,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Design,Design,Designerer Lead,1/10/2025,30/10/2026
+Franz,Yapu,2do,File,HOURLY,USD,7,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Design,Design,Designer Lead,1/10/2025,30/10/2026
 Israel,Colque,2do,File,HOURLY,USD,7,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Quality Assurance,Quality Assurance,QA Junior,2/1/2026,29/1/2027
 Alfredo,Ramos,2do,File,HOURLY,USD,10,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Development,Development,Developer Lead,1/7/2025,31/7/2026
 Santos,Alarcon,2do,File,HOURLY,USD,"17,6",UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Support,Support,Support Manager,1/8/2025,28/8/2026
 Viviana,Fernandez,2do,File,HOURLY,USD,12,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Quality Assurance,Quality Assurance,QA Manager,1/10/2025,30/10/2026
 Sophie,Concordel,2do,File,HOURLY,USD,15,UTC−04:00 (Bolivia/Atlantic Standard),UTC−04:00 (Bolivia/Atlantic Standard),Project Management,Project Management,Project Manager Senior,1/8/2025,28/8/2026
 Cecilia,Avila,2do,File,HOURLY,USD,6,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Account Management,Account Management,Account Manager Senior,2/1/2026,29/1/2027
-Walter,Zelada,2do,File,HOURLY,USD,6,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Sales Management,Sales Management,Data Analyst,1/7/2025,31/7/2026
+Winclusoalter,Zelada,2do,File,HOURLY,USD,6,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Sales Management,Sales Management,Data Analyst,1/7/2025,31/7/2026
 Hans,Robles,2do,File,HOURLY,USD,17,UTC−07:00 (Mexico),UTC−07:00 (Mexico),Development,Development,CTO,3/11/2025,27/11/2026
 Esteban,Chiri,2do,File,MONTHLY,USD,1550,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Development,Development,Developer Senior,1/9/2025,30/9/2026
-Diego,Babtista,2do,File,MONTHLY,USD,1050,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Sales Management,Sales Management,WordPress Developer,1/12/2025,25/12/2026
+Diego,Babtista,2do,File,MONTHLY,USD,1050,UTC−03:00 (Argentina/Brazil),UTC−03:00 (Argentina/Brazil),Sales Management,Sales Management,WordPress Development,1/12/2025,25/12/2026

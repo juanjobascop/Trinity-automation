@@ -39,7 +39,7 @@ describe('Bulk Create Contractor Contracts from CSV', () => {
         // Wait for search results and ensure loading overlay is gone
         cy.wait('@getContractors', { timeout: 30000 });
         cy.contains('Loading Data', { timeout: 20000 }).should('not.exist');
-        cy.wait(1000);
+        cy.wait(2000);
 
         cy.get('td.ng-star-inserted').contains(contract.contractorName, { timeout: 15000 })
           .should('be.visible')
@@ -65,17 +65,23 @@ describe('Bulk Create Contractor Contracts from CSV', () => {
             if (filter.length > 0) {
               // Filterable dropdown (Timezone, Area)
               cy.wrap(filter).clear().type(targetValue);
-              cy.wait(1500); // Wait for filtering
+              cy.wait(500); // Optimized wait
               cy.wrap($overlay).find('li').filter(':visible').first().click({ force: true });
             } else {
               // Non-filterable dropdown (Currency) - Select exact match
-              // Use simplified selector to avoid scroll jank
-              cy.wrap($overlay).find('li').contains(targetValue).first().click({ force: true });
+              // Ensure we find the exact text, ensure it's visible, scroll to it, then click WITHOUT force
+              cy.wrap($overlay).find('li').contains(targetValue).scrollIntoView().should('be.visible').click();
             }
           });
 
-          // Ensure overlay closes by clicking a safe neutral area (Dialog Header)
-          cy.get('.p-dialog-header').click({ force: true });
+          // Check if overlay is still there
+          cy.get('body').then(($body) => {
+            if ($body.find('.p-select-overlay').length > 0) {
+              // Try pressing ESC to close it
+              cy.get('body').type('{esc}');
+            }
+          });
+
           cy.get('.p-select-overlay').should('not.exist');
 
           // Verify selection (if label updates)
@@ -85,9 +91,7 @@ describe('Bulk Create Contractor Contracts from CSV', () => {
         selectDropdown('#currencyCt', contract.currency);
         selectDropdown('#timezoneCt', contract.timezoneSearch);
         selectDropdown('#areaCt', contract.areaSearch);
-
-        cy.get('#positionCt').click();
-        cy.get('#positionCt_list li').contains(contract.position).click();
+        selectDropdown('#positionCt', contract.position);
 
         // --- STEP 3: DATES (Integrated Formatting Logic) ---
         const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
